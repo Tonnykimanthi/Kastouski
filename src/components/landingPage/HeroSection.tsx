@@ -29,7 +29,7 @@ const HeroSection = () => {
 
       <div className="relative -mt-32 flex flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10">
         <Image width={1000} height={1000} src={"phones.svg"} alt="Phones" />
-        <button className="bottom-24 left-0 flex w-fit items-center gap-x-2 rounded-full bg-white px-8 py-2 text-black max-lg:bottom-16 max-md:bottom-10 md:absolute">
+        <button className="bottom-24 left-0 flex w-fit items-center gap-x-2 rounded-full bg-white px-8 py-2 text-black transition hover:scale-x-105 hover:bg-white/95 max-lg:bottom-16 max-md:bottom-10 md:absolute">
           <Image
             width={25}
             height={25}
