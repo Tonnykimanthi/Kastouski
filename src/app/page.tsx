@@ -1,9 +1,9 @@
-import Header from "@/components/layout/Header";
+import HeroSection from "@/components/landingPage/HeroSection";
 
 export default function Home() {
   return (
-    <div className="">
-      <Header />
+    <div>
+      <HeroSection />
     </div>
   );
 }
