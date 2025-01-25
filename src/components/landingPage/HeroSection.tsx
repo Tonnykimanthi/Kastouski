@@ -37,7 +37,7 @@ const HeroSection = () => {
             alt="Google Play"
             className="bg-transparent"
           />
-          <span className="max-sm:text-sm">
+          <span className="flex flex-col items-start max-sm:text-sm">
             <p>Скачать в</p>
             <p>Google Play</p>
           </span>
