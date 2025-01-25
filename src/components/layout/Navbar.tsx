@@ -28,19 +28,19 @@ const Navbar = () => {
         </button>
         <ul className="flex items-center gap-x-5 text-lg max-md:flex-col max-md:gap-y-5">
           <li className="transition hover:text-mainYellow">
-            <Link href={"Главная"}>Главная</Link>
+            <Link href={"#"}>Главная</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"Новости"}>Новости</Link>
+            <Link href={"#"}>Новости</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"Возможности"}>Возможности</Link>
+            <Link href={"#"}>Возможности</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"Преимущества"}>Преимущества</Link>
+            <Link href={"#"}>Преимущества</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"FAQs"}>FAQs</Link>
+            <Link href={"#"}>FAQs</Link>
           </li>
         </ul>
       </nav>
