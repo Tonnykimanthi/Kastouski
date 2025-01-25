@@ -7,17 +7,17 @@ import Title from "../ui/Title";
 
 const HeroSection = () => {
   return (
-    <div className="bg-mainGreen py-5 px-10 text-white">
+    <div className="bg-mainGreen px-10 py-5 text-white">
       <Navbar />
 
       <h1 className="mt-10 max-md:text-center">
         <div className="flex items-center gap-x-5">
           <Title text="Лучший способ управлять" />
-          <span className="p-2 bg-mainYellow rounded-full max-md:hidden">
-            <GoArrowUpRight className="text-black w-10 h-10" />
+          <span className="rounded-full bg-mainYellow p-2 max-md:hidden">
+            <GoArrowUpRight className="h-10 w-10 text-black" />
           </span>
         </div>
-        <div className="flex gap-x-5 items-center mt-2 max-md:flex-col-reverse max-md:mt-0 gap-y-5 max-md:items-center">
+        <div className="mt-2 flex items-center gap-x-5 gap-y-5 max-md:mt-0 max-md:flex-col-reverse max-md:items-center">
           <p className="max-w-lg font-light">
             Уже более 200 человек используют наше приложение. Удобный контроль
             за собственными доходами и расходами, которые помогут сохранить
@@ -27,9 +27,9 @@ const HeroSection = () => {
         </div>
       </h1>
 
-      <div className="-mt-32 relative max-md:-mt-20 max-sm:-mt-10 flex flex-col items-center gap-y-2">
+      <div className="relative -mt-32 flex flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10">
         <Image width={1000} height={1000} src={"phones.svg"} alt="Phones" />
-        <button className="bg-white md:absolute w-fit bottom-24 max-lg:bottom-16 max-md:bottom-10 left-0 py-2 px-8 rounded-full text-black flex items-center gap-x-2">
+        <button className="bottom-24 left-0 flex w-fit items-center gap-x-2 rounded-full bg-white px-8 py-2 text-black max-lg:bottom-16 max-md:bottom-10 md:absolute">
           <Image
             width={25}
             height={25}

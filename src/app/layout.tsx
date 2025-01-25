@@ -24,10 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className="bg-gray-50 text-balance">
-        {children}
-      </body>
+      <body className="text-balance bg-gray-50">{children}</body>
     </html>
   );
 }
