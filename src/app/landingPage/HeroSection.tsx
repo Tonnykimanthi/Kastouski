@@ -1,6 +1,6 @@
 import Image from "next/image";
 // Components
-import Navbar from "../../components/layout/Navbar";
+import Header from "../../components/layout/Header";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
 import Title from "../../components/ui/Title";
@@ -8,7 +8,7 @@ import Title from "../../components/ui/Title";
 const HeroSection = () => {
   return (
     <div className="bg-mainGreen px-10 py-5 text-white">
-      <Navbar />
+      <Header />
 
       <h1 className="mt-10 max-md:text-center">
         <div className="flex items-center gap-x-5">
