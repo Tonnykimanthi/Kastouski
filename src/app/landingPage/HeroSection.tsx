@@ -1,9 +1,9 @@
 import Image from "next/image";
 // Components
-import Navbar from "../layout/Navbar";
+import Navbar from "../../components/layout/Navbar";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
-import Title from "../ui/Title";
+import Title from "../../components/ui/Title";
 
 const HeroSection = () => {
   return (
