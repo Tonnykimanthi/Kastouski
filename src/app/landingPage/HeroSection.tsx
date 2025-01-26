@@ -7,7 +7,7 @@ import Title from "../../components/ui/Title";
 
 const HeroSection = () => {
   return (
-    <div className="bg-mainGreen px-10 py-5 text-white">
+    <section className="bg-mainGreen px-10 py-5 text-white">
       <Header />
 
       <h1 className="mt-10 max-md:text-center">
@@ -43,7 +43,7 @@ const HeroSection = () => {
           </span>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
