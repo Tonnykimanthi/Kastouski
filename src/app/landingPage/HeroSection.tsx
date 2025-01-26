@@ -1,13 +1,13 @@
 import Image from "next/image";
 // Components
 import Header from "../../components/layout/Header";
+import Title from "../../components/ui/Title";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
-import Title from "../../components/ui/Title";
 
 const HeroSection = () => {
   return (
-    <section className="bg-mainGreen px-10 py-5 text-white">
+    <section className="bg-mainGreen px-16 py-5 text-white">
       <Header />
 
       <h1 className="mt-10 max-md:text-center">

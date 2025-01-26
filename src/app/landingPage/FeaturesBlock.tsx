@@ -1,13 +1,11 @@
-// Components
+// Components 
 import SubTitle from "@/components/ui/SubTitle";
 import { featuresList } from "@/constants/FeaturesList";
 import Image from "next/image";
-// Icons
-import { CiMail } from "react-icons/ci";
 
 const FeaturesBlock = () => {
   return (
-    <section className="px-10">
+    <section className="px-16">
       <div className="text-center">
         <SubTitle
           title="Возможности"
