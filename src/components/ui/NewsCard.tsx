@@ -11,7 +11,7 @@ type NewsCardProps = {
 
 const NewsCard = ({ date, title, paragraph, img }: NewsCardProps) => {
   return (
-    <div className="w-1/3 flex-shrink-0 px-2">
+    <div className="w-1/3 flex-shrink-0 px-2 max-md:w-1/2 max-sm:w-full">
       <div className="rounded-xl border">
         <div className="from-mintWhite/50 to-mintGreen/50 flex h-52 justify-center overflow-hidden rounded-t-xl border-b bg-gradient-to-br">
           <Image

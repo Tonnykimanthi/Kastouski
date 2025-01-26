@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 // Components
 import SubTitle from "@/components/ui/SubTitle";
 import NewsCard from "@/components/ui/NewsCard";
-import Steps from "@/components/ui/Steps";
+import NewsCardsSteps from "@/components/ui/NewsCardsSteps";
 // Constants
 import { newsCardsList } from "@/constants/newsCardsList";
 // Icons
@@ -14,21 +14,40 @@ import { IoChevronForwardOutline } from "react-icons/io5";
 
 const NewsBlock = () => {
   const [current, setCurrent] = useState(0);
+  const [steps, setSteps] = useState(1);
 
   const handlePrevSlide = () => {
     if (current === 0) {
-      setCurrent(1);
+      setCurrent(steps);
       return;
     }
     setCurrent(current - 1);
   };
   const handleNextSlide = () => {
-    if (current === 1) {
+    if (current === steps) {
       setCurrent(0);
       return;
     }
     setCurrent(current + 1);
   };
+
+  useEffect(() => {
+    const updateSteps = () => {
+      if (window.matchMedia("(max-width: 640px)").matches) {
+        setSteps(5);
+      } else if (window.matchMedia("(max-width: 769px)").matches) {
+        setSteps(2);
+      } else {
+        setSteps(1);
+      }
+    };
+
+    updateSteps();
+
+    window.addEventListener("resize", updateSteps);
+
+    return () => window.removeEventListener("resize", updateSteps);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -56,7 +75,7 @@ const NewsBlock = () => {
           ))}
         </div>
 
-        <Steps current={current} setCurrent={setCurrent}/>
+        <NewsCardsSteps current={current} setCurrent={setCurrent} />
       </div>
       <button
         className="absolute left-5 top-1/2 -translate-y-1/2"
