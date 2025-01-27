@@ -4,6 +4,7 @@ import FeaturesBlock from "./landingPage/FeaturesBlock";
 import NewsBlock from "./landingPage/NewsBlock";
 import AdvantagesBlock from "./landingPage/AdvantagesBlock";
 import DownloadCardBlock from "./landingPage/DownloadCardBlock";
+import QuestionBlock from "./landingPage/QuestionBlock";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <NewsBlock />
       <AdvantagesBlock />
       <DownloadCardBlock />
+      <QuestionBlock />
     </div>
   );
 }
