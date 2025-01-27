@@ -5,21 +5,21 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
 // Components
 import SubTitle from "@/components/ui/SubTitle";
-import NewsCard from "@/components/ui/NewsCard";
+import Feedback from "@/components/ui/Feedback";
 // Constants
-import { newsCardsList } from "@/constants/newsCardsList";
+import { feedbacksList } from "@/constants/feedbacksList";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
 import { GoChevronLeft } from "react-icons/go";
 import { GoChevronRight } from "react-icons/go";
 
-const NewsBlock = () => {
+const FeedbackBlock = () => {
   return (
     <section className="bg-mainGreen p-16">
-      <div className="flex items-center justify-between text-white max-sm:justify-center max-sm:text-center">
-        <SubTitle title="Новости" />
-        <button className="flex items-center gap-x-2 rounded-full border border-white px-3 py-1 transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden">
-          Все новости
+      <div className="flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center">
+        <SubTitle title="Что говорят пользователи нашего приложения" />
+        <button className="flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden">
+          Оставить отзыв
           <GoArrowUpRight className="h-7 w-7" />
         </button>
       </div>
@@ -40,13 +40,13 @@ const NewsBlock = () => {
           }}
         >
           <SplideTrack>
-            {newsCardsList.map((card, index) => (
+            {feedbacksList.map((feedback, index) => (
               <SplideSlide key={index}>
-                <NewsCard {...card} />
+                <Feedback {...feedback} />
               </SplideSlide>
             ))}
           </SplideTrack>
-          <div className="splide__arrows absolute top-1/2 w-full -translate-y-1/2 text-white">
+          <div className="splide__arrows absolute top-1/2 -mt-7 w-full -translate-y-1/2 text-white">
             <button className="splide__arrow splide__arrow--prev absolute -left-12">
               <GoChevronLeft className="h-10 w-10" />
             </button>
@@ -56,7 +56,7 @@ const NewsBlock = () => {
           </div>
         </Splide>
         <button className="mx-auto mt-5 flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 text-white transition duration-300 hover:bg-white hover:text-black active:scale-95 sm:hidden">
-          Все новости
+          Оставить отзыв
           <GoArrowUpRight className="h-7 w-7" />
         </button>
       </main>
@@ -64,4 +64,4 @@ const NewsBlock = () => {
   );
 };
 
-export default NewsBlock;
+export default FeedbackBlock;
