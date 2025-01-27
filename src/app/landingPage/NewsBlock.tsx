@@ -1,5 +1,6 @@
 "use client";
 
+// @ts-ignore
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
 // Components
