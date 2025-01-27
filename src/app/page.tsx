@@ -3,6 +3,7 @@ import HeroSection from "@/app/landingPage/HeroSection";
 import FeaturesBlock from "./landingPage/FeaturesBlock";
 import NewsBlock from "./landingPage/NewsBlock";
 import AdvantagesBlock from "./landingPage/AdvantagesBlock";
+import DownloadCardBlock from "./landingPage/DownloadCardBlock";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <FeaturesBlock />
       <NewsBlock />
       <AdvantagesBlock />
+      <DownloadCardBlock />
     </div>
   );
 }
