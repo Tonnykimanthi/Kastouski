@@ -4,6 +4,7 @@ import Header from "../../components/layout/Header";
 import Title from "../../components/ui/Title";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
+import GooglePlayBtn from "@/components/ui/GooglePlayBtn";
 
 const HeroSection = () => {
   return (
@@ -29,19 +30,9 @@ const HeroSection = () => {
 
       <div className="relative -mt-32 flex flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10">
         <Image width={1000} height={1000} src={"phones.svg"} alt="Phones" />
-        <button className="bottom-24 left-0 flex w-fit items-center gap-x-2 rounded-full bg-white px-8 py-2 text-black transition hover:scale-x-105 hover:bg-white/95 max-lg:bottom-16 max-md:bottom-10 md:absolute">
-          <Image
-            width={25}
-            height={25}
-            src={"google-play.svg"}
-            alt="Google Play"
-            className="bg-transparent"
-          />
-          <span className="flex flex-col items-start max-sm:text-sm">
-            <p>Скачать в</p>
-            <p>Google Play</p>
-          </span>
-        </button>
+        <div className="bottom-24 left-0 max-lg:bottom-16 max-md:bottom-10 md:absolute">
+          <GooglePlayBtn />
+        </div>
       </div>
     </section>
   );

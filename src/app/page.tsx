@@ -9,7 +9,7 @@ import FeedbackBlock from "./landingPage/FeedbackBlock";
 
 export default function Home() {
   return (
-    <div className="pb-10">
+    <div>
       <HeroSection />
       <FeaturesBlock />
       <NewsBlock />
