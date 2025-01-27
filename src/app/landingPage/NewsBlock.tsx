@@ -1,62 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css/core";
 // Components
 import SubTitle from "@/components/ui/SubTitle";
 import NewsCard from "@/components/ui/NewsCard";
-import NewsCardsSteps from "@/components/ui/NewsCardsSteps";
 // Constants
 import { newsCardsList } from "@/constants/newsCardsList";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
-import { IoChevronBack } from "react-icons/io5";
-import { IoChevronForwardOutline } from "react-icons/io5";
+import { GoChevronLeft } from "react-icons/go";
+import { GoChevronRight } from "react-icons/go";
 
 const NewsBlock = () => {
-  const [current, setCurrent] = useState(0);
-  const [steps, setSteps] = useState(1);
-
-  const handlePrevSlide = () => {
-    if (current === 0) {
-      setCurrent(steps);
-      return;
-    }
-    setCurrent(current - 1);
-  };
-  const handleNextSlide = () => {
-    if (current === steps) {
-      setCurrent(0);
-      return;
-    }
-    setCurrent(current + 1);
-  };
-
-  useEffect(() => {
-    const updateSteps = () => {
-      if (window.matchMedia("(max-width: 640px)").matches) {
-        setSteps(5);
-      } else if (window.matchMedia("(max-width: 769px)").matches) {
-        setSteps(2);
-      } else {
-        setSteps(1);
-      }
-    };
-
-    updateSteps();
-
-    window.addEventListener("resize", updateSteps);
-
-    return () => window.removeEventListener("resize", updateSteps);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setCurrent(0);
-    });
-  }, []);
-
   return (
-    <section className="relative bg-mainGreen p-16">
+    <section className="bg-mainGreen p-16">
       <div className="flex items-center justify-between text-white">
         <SubTitle title="Новости" />
         <button className="flex items-center gap-x-2 rounded-full border border-white px-3 py-1 transition duration-300 hover:bg-white hover:text-black active:scale-95">
@@ -65,30 +23,38 @@ const NewsBlock = () => {
         </button>
       </div>
 
-      <div className="mx-auto mt-5 w-full overflow-hidden">
-        <div
-          style={{ transform: `translateX(-${current * 100}%)` }}
-          className="flex w-full items-center transition duration-500"
+      <div className="relative mx-auto mt-5 w-full">
+        <Splide
+          aria-label="News Slider"
+          hasTrack={false}
+          options={{
+            rewind: true,
+            perPage: 3,
+            gap: "1rem",
+            pagination: true,
+            breakpoints: {
+              768: { perPage: 2 },
+              640: { perPage: 1 },
+            },
+          }}
         >
-          {newsCardsList.map((card, index) => (
-            <NewsCard key={index} {...card} />
-          ))}
-        </div>
-
-        <NewsCardsSteps current={current} setCurrent={setCurrent} />
+          <SplideTrack>
+            {newsCardsList.map((card, index) => (
+              <SplideSlide key={index}>
+                <NewsCard {...card} />
+              </SplideSlide>
+            ))}
+          </SplideTrack>
+          <div className="splide__arrows absolute top-1/2 w-full -translate-y-1/2 text-white">
+            <button className="splide__arrow splide__arrow--prev absolute -left-12">
+              <GoChevronLeft className="h-10 w-10" />
+            </button>
+            <button className="splide__arrow splide__arrow--next absolute -right-12">
+              <GoChevronRight className="h-10 w-10" />
+            </button>
+          </div>
+        </Splide>
       </div>
-      <button
-        className="absolute left-5 top-1/2 -translate-y-1/2"
-        onClick={handlePrevSlide}
-      >
-        <IoChevronBack className="h-8 w-8 text-white" />
-      </button>
-      <button
-        className="absolute right-5 top-1/2 -translate-y-1/2"
-        onClick={handleNextSlide}
-      >
-        <IoChevronForwardOutline className="h-8 w-8 text-white" />
-      </button>
     </section>
   );
 };
