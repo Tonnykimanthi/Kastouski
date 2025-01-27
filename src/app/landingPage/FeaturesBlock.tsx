@@ -1,11 +1,11 @@
-// Components 
+// Components
 import SubTitle from "@/components/ui/SubTitle";
 import { featuresList } from "@/constants/FeaturesList";
 import Image from "next/image";
 
 const FeaturesBlock = () => {
   return (
-    <section className="px-16">
+    <section className="p-16">
       <div className="text-center">
         <SubTitle
           title="Возможности"

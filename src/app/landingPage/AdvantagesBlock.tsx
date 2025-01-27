@@ -1,5 +1,43 @@
+// Components
+import SubTitle from "@/components/ui/SubTitle";
+import Image from "next/image";
+
 const AdvantagesBlock = () => {
-  return <div>AdvantagesBlock</div>;
+  return (
+    <section className="p-16">
+      <div className="text-center">
+        <SubTitle
+          title="Получите наилучшие впечатления"
+          paragraph="Совершите плавный переход к финансовому мастерству с помощью интуитивно понятных инструментов, персонализированной информации и безопасных транзакций."
+        />
+      </div>
+      <main className="mt-5 grid grid-cols-2 gap-5 max-sm:grid-cols-1">
+        <Image
+          width={500}
+          height={500}
+          src={"/graphic-card.svg"}
+          alt="Graphic Card"
+        />
+        <div className="grid gap-5">
+          <Image width={500} height={500} src={"/nn-card.svg"} alt="NN Card" />
+          <div className="grid grid-cols-2 gap-5">
+            <Image
+              width={500}
+              height={500}
+              src={"/currency-card.svg"}
+              alt="Currency Card"
+            />
+            <Image
+              width={500}
+              height={500}
+              src={"/loyalty-card.svg"}
+              alt="Loyalty Card"
+            />
+          </div>
+        </div>
+      </main>
+    </section>
+  );
 };
 
 export default AdvantagesBlock;
