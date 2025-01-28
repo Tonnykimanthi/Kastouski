@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/layout/Header";
 import SubTitle from "@/components/ui/SubTitle";
 import Search from "@/components/ui/Search";
+import NewsBlock from "./NewsBlock";
 
 const page = () => {
   return (
@@ -13,7 +14,7 @@ const page = () => {
       <div className="px-16 py-5 max-lg:px-10 max-md:px-5">
         <SubTitle title="Новости" />
       </div>
-      <div className="relative border px-16 py-5 max-lg:px-10 max-md:px-5">
+      <div className="relative py-5">
         <Image
           width={500}
           height={500}
@@ -26,6 +27,10 @@ const page = () => {
           styles="w-3/4 max-w-md absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
         />
       </div>
+
+      <main className="p-16 max-lg:px-10 max-md:px-5">
+        <NewsBlock />
+      </main>
     </div>
   );
 };
