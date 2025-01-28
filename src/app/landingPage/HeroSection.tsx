@@ -8,7 +8,7 @@ import GooglePlayBtn from "@/components/ui/GooglePlayBtn";
 
 const HeroSection = () => {
   return (
-    <section className="bg-mainGreen px-16 py-5 text-white">
+    <section className="bg-mainGreen px-16 py-5 text-white max-lg:px-10 max-md:px-5">
       <Header />
 
       <h1 className="mt-10 max-md:text-center">

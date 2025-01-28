@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const DownloadCardBlock = () => {
   return (
-    <section className="bg-mainGreen p-16 text-white">
+    <section className="bg-mainGreen p-16 text-white max-lg:px-10 max-md:px-5">
       <div className="text-center">
         <SubTitle
           title="Скачайте мобильное приложение FinFlow"

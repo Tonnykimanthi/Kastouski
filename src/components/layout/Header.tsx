@@ -26,7 +26,7 @@ const Header = () => {
         >
           <IoMdClose className="h-7 w-7 transition hover:scale-105" />
         </button>
-        <ul className="flex items-center gap-x-5 text-lg max-md:flex-col max-md:gap-y-5">
+        <ul className="flex items-center gap-x-5 max-md:flex-col max-md:gap-y-5">
           <li className="transition hover:text-mainYellow">
             <Link href={"#"}>Главная</Link>
           </li>

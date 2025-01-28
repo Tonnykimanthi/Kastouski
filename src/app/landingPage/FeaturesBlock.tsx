@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const FeaturesBlock = () => {
   return (
-    <section className="p-16">
+    <section className="p-16 max-lg:px-10 max-md:px-5">
       <div className="text-center">
         <SubTitle
           title="Возможности"
