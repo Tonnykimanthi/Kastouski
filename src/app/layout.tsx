@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="text-balance bg-gray-50">{children}
-        <Footer />
-      </body>
+      <body className="text-balance bg-gray-50">{children}</body>
     </html>
   );
 }

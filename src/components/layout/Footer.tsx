@@ -8,17 +8,29 @@ import SubTitle from "../ui/SubTitle";
 import SocialLink from "../ui/SocialLink";
 import { socialLinksList } from "@/constants/SocialLinksList";
 
-const Footer = () => {
+type FooterProps = {
+  styles?: string;
+  logo?: string;
+  socialIconsStyles?: string;
+  googlePlayBtnStyles?: string;
+};
+
+const Footer = ({
+  styles,
+  logo,
+  socialIconsStyles,
+  googlePlayBtnStyles,
+}: FooterProps) => {
   return (
-    <footer className="p-16">
+    <footer className={`p-16 ${styles}`}>
       <div className="flex items-center justify-between gap-5 max-sm:flex-col max-sm:text-center">
         <SubTitle title="Управляйте финансами с лёгкостью" />
-        <GooglePlayBtn styles="border border-black" />
+        <GooglePlayBtn styles={googlePlayBtnStyles} />
       </div>
 
       <main className="mt-5 flex justify-between gap-5 max-md:flex-col-reverse max-md:items-center">
         <Link href={"#"}>
-          <Image width={150} height={100} src={"/logo-black.svg"} alt="Logo" />
+          <Image width={100} height={100} src={`${logo}`} alt="Logo" />
         </Link>
         <div className="grid grid-cols-2 gap-5">
           {headerColsList.map((col, index) => (
@@ -41,7 +53,7 @@ const Footer = () => {
         <p>2024 © Все права защищены</p>
         <div className="flex gap-5">
           {socialLinksList.map((item, index) => (
-            <SocialLink key={index} {...item} />
+            <SocialLink key={index} {...item} styles={socialIconsStyles} />
           ))}
         </div>
       </div>
