@@ -7,16 +7,20 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
-const Header = () => {
+type HeaderProps = {
+  logo: string;
+};
+
+const Header = ({ logo }: HeaderProps) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   return (
     <header className="flex items-center justify-between">
       <Link href={"#"}>
-        <Image width={150} height={100} src={"logo.svg"} alt="Logo" />
+        <Image width={150} height={100} src={logo} alt="Logo" />
       </Link>
       <nav
-        className={`left-0 right-0 top-0 z-20 origin-top-right transition max-md:absolute max-md:scale-0 max-md:bg-black max-md:p-20 ${
+        className={`left-0 right-0 top-0 z-20 origin-top-right transition max-md:absolute max-md:scale-0 max-md:bg-black max-md:p-20 max-md:text-white ${
           navIsOpen ? "max-md:scale-100" : "max-md:scale-0"
         }`}
       >

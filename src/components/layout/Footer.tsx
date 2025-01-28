@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="p-16">
       <div className="flex items-center justify-between gap-5 max-sm:flex-col max-sm:text-center">
         <SubTitle title="Управляйте финансами с лёгкостью" />
-        <GooglePlayBtn styles="border border-black"/>
+        <GooglePlayBtn styles="border border-black" />
       </div>
 
       <main className="mt-5 flex justify-between gap-5 max-md:flex-col-reverse max-md:items-center">
