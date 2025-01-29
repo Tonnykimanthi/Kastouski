@@ -26,7 +26,7 @@ const FeaturesBlock = () => {
           height={400}
           src={"phone.svg"}
           alt="Phone"
-          className="md:hidden"
+          className="w-auto md:hidden"
         />
         <div className="grid grid-cols-2 gap-x-72 gap-y-10 max-lg:gap-x-56 max-lg:gap-y-5 max-md:gap-x-16 max-sm:grid-cols-1">
           {featuresList.map((feature, index) => (
@@ -44,7 +44,7 @@ const FeaturesBlock = () => {
                   height={25}
                   src={feature.icon}
                   alt="Icon"
-                  className="w-full"
+                  className="w-auto"
                 />
               </span>
             </div>

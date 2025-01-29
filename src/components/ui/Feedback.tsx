@@ -8,6 +8,8 @@ type FeedbackProps = {
   description: string;
 };
 
+//  TO BE FIXED -> POSITIONING
+
 const Feedback = ({ avatar, name, description }: FeedbackProps) => {
   return (
     <div className="rounded-xl bg-white p-5 pt-0">
