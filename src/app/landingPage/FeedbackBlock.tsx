@@ -6,6 +6,7 @@ import "@splidejs/react-splide/css/core";
 // Components
 import SubTitle from "@/components/ui/SubTitle";
 import Feedback from "@/components/ui/Feedback";
+import BgLines from "@/components/ui/BgLines";
 // Constants
 import { feedbacksList } from "@/constants/feedbacksList";
 // Icons
@@ -15,7 +16,8 @@ import { GoChevronRight } from "react-icons/go";
 
 const FeedbackBlock = () => {
   return (
-    <section className="bg-mainGreen p-16 max-lg:px-10 max-md:px-5">
+    <section className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5">
+      <BgLines path="/lines4.svg" />
       <div className="flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center">
         <SubTitle title="Что говорят пользователи нашего приложения" />
         <button className="flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden">
