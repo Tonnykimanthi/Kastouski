@@ -18,24 +18,25 @@ const NewsBlock = () => {
   return (
     <section className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5">
       <BgLines path="/lines2.svg" />
-      <div className="z-[2] flex items-center justify-between text-white max-sm:justify-center max-sm:text-center">
+      <div className="z-[2] mx-auto flex items-center justify-between text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[100rem]">
         <SubTitle title="Новости" />
-        <button className="flex items-center gap-x-2 rounded-full border border-white px-3 py-1 transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden">
+        <button className="flex items-center gap-x-2 rounded-full border border-white px-3 py-1 transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden 2xl:px-6 2xl:py-2 2xl:text-2xl">
           Все новости
           <GoArrowUpRight className="h-7 w-7" />
         </button>
       </div>
 
-      <main className="relative mx-auto mt-5 w-full">
+      <main className="relative mx-auto mt-5 w-full 2xl:max-w-[100rem]">
         <Splide
           aria-label="News Slider"
           hasTrack={false}
           options={{
             rewind: true,
             perPage: 3,
-            gap: "1rem",
+            gap: "3rem",
             pagination: true,
             breakpoints: {
+              1536: { gap: "1rem" },
               768: { perPage: 2 },
               640: { perPage: 1 },
             },
@@ -49,17 +50,17 @@ const NewsBlock = () => {
             ))}
           </SplideTrack>
           <div className="splide__arrows absolute top-1/2 w-full -translate-y-1/2 text-white">
-            <button className="splide__arrow splide__arrow--prev absolute -left-12">
-              <GoChevronLeft className="h-10 w-10" />
+            <button className="splide__arrow splide__arrow--prev absolute -left-12 2xl:-left-20">
+              <GoChevronLeft className="size-10 2xl:size-20" />
             </button>
-            <button className="splide__arrow splide__arrow--next absolute -right-12">
-              <GoChevronRight className="h-10 w-10" />
+            <button className="splide__arrow splide__arrow--next absolute -right-12 2xl:-right-20">
+              <GoChevronRight className="size-10 2xl:size-20" />
             </button>
           </div>
         </Splide>
         <button className="mx-auto mt-5 flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 text-white transition duration-300 hover:bg-white hover:text-black active:scale-95 sm:hidden">
           Все новости
-          <GoArrowUpRight className="h-7 w-7" />
+          <GoArrowUpRight className="size-7" />
         </button>
       </main>
     </section>

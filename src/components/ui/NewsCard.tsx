@@ -11,7 +11,7 @@ type NewsCardProps = {
 
 const NewsCard = ({ date, title, paragraph, img }: NewsCardProps) => {
   return (
-    <div className="overflow-hidden rounded-xl">
+    <div className="overflow-hidden rounded-xl 2xl:text-3xl">
       <div className="flex h-52 justify-center border-b bg-gradient-to-br from-mintWhite/50 to-mintGreen/50">
         <Image
           width={150}
@@ -23,7 +23,7 @@ const NewsCard = ({ date, title, paragraph, img }: NewsCardProps) => {
 
       <div className="bg-white p-2">
         <p className="font-light">
-          <span>Обновление</span> |<span>{date}</span>
+          <span>Обновление</span> | <span>{date}</span>
         </p>
         <h5 className="my-2">{title}</h5>
         <p className="font-light">{paragraph}</p>
