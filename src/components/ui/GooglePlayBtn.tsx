@@ -7,7 +7,7 @@ type GooglePlayBtnProps = {
 const GooglePlayBtn = ({ styles }: GooglePlayBtnProps) => {
   return (
     <button
-      className={`flex w-fit flex-shrink-0 items-center gap-x-4 rounded-full bg-white px-8 py-1 text-black transition hover:scale-x-105 hover:bg-white/95 ${styles}`}
+      className={`flex w-fit flex-shrink-0 items-center gap-x-4 rounded-full bg-white px-8 py-2 text-black transition hover:scale-x-105 hover:bg-white/95 2xl:px-16 2xl:py-5 ${styles}`}
     >
       <Image
         width={20}
@@ -16,7 +16,7 @@ const GooglePlayBtn = ({ styles }: GooglePlayBtnProps) => {
         alt="Google Play"
         className="bg-transparent"
       />
-      <span className="flex flex-col items-start text-sm">
+      <span className="flex flex-col items-start text-sm xl:text-base">
         <p>Скачать в</p>
         <p>Google Play</p>
       </span>

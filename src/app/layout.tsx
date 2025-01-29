@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode;  
 }>) {
   return (
     <html lang="en" className="overflow-x-hidden">
-      <body className="text-balance overflow-x-hidden">{children}</body>
+      <body className="overflow-x-hidden text-balance">{children}</body>
     </html>
   );
 }
