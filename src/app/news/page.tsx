@@ -26,7 +26,7 @@ const page = () => {
         />
         <Search
           placeholder="Поиск"
-          styles="w-3/4 max-w-lg absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+          styles="max-w-lg absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
         />
       </div>
 

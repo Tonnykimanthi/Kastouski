@@ -9,7 +9,7 @@ type SearchProps = {
 const Search = ({ placeholder, styles }: SearchProps) => {
   return (
     <div
-      className={`absolute w-fit overflow-hidden rounded-full border border-black transition has-[:focus]:shadow has-[:focus]:shadow-black/20 ${styles}`}
+      className={`w-fit overflow-hidden rounded-full border border-black transition has-[:focus]:shadow has-[:focus]:shadow-black/20 ${styles}`}
     >
       <input
         type="search"
