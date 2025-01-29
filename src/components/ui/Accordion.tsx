@@ -53,15 +53,15 @@ const Accordion = ({ quiz, answer, index }: AccordionProps) => {
         className="accordion-input peer hidden"
       />
       <div className="flex cursor-pointer items-center justify-between">
-        <h5 className="text-lg">{quiz}</h5>
+        <h5 className="text-lg 2xl:text-5xl">{quiz}</h5>
         <button>
-          <GoChevronDown className="accordion-icon h-7 w-7 transition" />
+          <GoChevronDown className="accordion-icon size-10 gap-5 transition 2xl:size-20" />
         </button>
       </div>
 
       <div className="grid grid-rows-[0fr] transition-all duration-200 peer-checked:grid-rows-[1fr]">
         <div className="overflow-hidden">
-          <p className="mt-2 font-light">{answer}</p>
+          <p className="mt-2 font-light 2xl:text-4xl">{answer}</p>
         </div>
       </div>
     </label>
