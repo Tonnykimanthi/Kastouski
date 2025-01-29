@@ -44,7 +44,7 @@ const Accordion = ({ quiz, answer, index }: AccordionProps) => {
   return (
     <label
       htmlFor={`radio${index}`}
-      className="grid rounded-xl bg-mainGreen/40 p-5 has-[:checked]:bg-mainYellow"
+      className="bg-lightGreen/80 grid rounded-xl p-5 has-[:checked]:bg-mainYellow"
     >
       <input
         type="radio"
@@ -53,7 +53,7 @@ const Accordion = ({ quiz, answer, index }: AccordionProps) => {
         className="accordion-input peer hidden"
       />
       <div className="flex cursor-pointer items-center justify-between">
-        <h5 className="text-lg font-medium">{quiz}</h5>
+        <h5 className="text-lg">{quiz}</h5>
         <button>
           <GoChevronDown className="accordion-icon h-7 w-7 transition" />
         </button>
@@ -61,7 +61,7 @@ const Accordion = ({ quiz, answer, index }: AccordionProps) => {
 
       <div className="grid grid-rows-[0fr] transition-all duration-200 peer-checked:grid-rows-[1fr]">
         <div className="overflow-hidden">
-          <p className="mt-2">{answer}</p>
+          <p className="mt-2 font-light">{answer}</p>
         </div>
       </div>
     </label>

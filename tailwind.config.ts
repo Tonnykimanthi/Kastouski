@@ -11,6 +11,7 @@ export default {
       colors: {
         mainYellow: "#FFE000",
         mainGreen: "#38A765",
+        lightGreen: "#C0F3CB",
         mintWhite: "#F2F9F3",
         mintGreen: "#E7FFD8",
       },
