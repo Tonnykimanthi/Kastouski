@@ -11,7 +11,7 @@ const BgLines = ({ path }: BgLinesProps) => {
       height={500}
       src={path}
       alt="Lines"
-      className="pointer-events-none absolute bottom-0 left-0 right-0 top-0 w-auto"
+      className="pointer-events-none absolute bottom-0 left-0 right-0 top-0 w-full max-md:top-12"
     />
   );
 };

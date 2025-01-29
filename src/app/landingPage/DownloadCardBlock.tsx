@@ -5,8 +5,8 @@ import SubTitle from "@/components/ui/SubTitle";
 
 const DownloadCardBlock = () => {
   return (
-    <section className="relative bg-mainGreen p-16 text-white max-lg:px-10 max-md:px-5">
-      <BgLines path="/lines3.svg" />
+    <section className="bg-mainGreen relative p-16 text-white max-lg:px-10 max-md:px-5">
+      <BgLines path="/lines3.svg"/>
       <div className="text-center">
         <SubTitle
           title="Скачайте мобильное приложение FinFlow"
@@ -19,7 +19,7 @@ const DownloadCardBlock = () => {
           height={500}
           src={"/download-cards.svg"}
           alt="Download Cards"
-          className="w-full"
+          className="w-auto"
         />
       </div>
     </section>

@@ -13,11 +13,11 @@ const HeroSection = () => {
       <BgLines path="/lines.svg" />
       <Header logo="/logo.svg" />
 
-      <h1 className="mx-auto mt-10 max-2xl:mt-20 w-fit max-xl:text-center">
+      <div className="mx-auto mt-10 w-fit max-2xl:mt-20 max-xl:text-center">
         <div className="flex items-center gap-x-5">
           <Title text="Лучший способ управлять" />
           <span className="rounded-full bg-mainYellow p-2 max-md:hidden">
-            <GoArrowUpRight className="h-10 w-10 text-black 2xl:size-32" />
+            <GoArrowUpRight className="2xl:size-[102px] text-black size-20" />
           </span>
         </div>
         <div className="mt-2 flex items-center gap-x-5 gap-y-5 max-md:mt-0 max-md:flex-col-reverse max-md:items-center">
@@ -28,7 +28,7 @@ const HeroSection = () => {
           </p>
           <Title text="своими финансами" />
         </div>
-      </h1>
+      </div>
 
       <div className="relative -mt-32 flex flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10">
         <Image width={2000} height={2000} src={"phones.svg"} alt="Phones" />

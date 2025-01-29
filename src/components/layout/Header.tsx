@@ -15,9 +15,15 @@ const Header = ({ logo }: HeaderProps) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex items-center justify-between gap-x-12">
       <Link href={"#"}>
-        <Image width={150} height={100} src={logo} alt="Logo" />
+        <Image
+          width={150}
+          height={100}
+          src={logo}
+          alt="Logo"
+          className="w-[185px]"
+        />
       </Link>
       <nav
         className={`left-0 right-0 top-0 z-20 origin-top-right transition max-md:absolute max-md:scale-0 max-md:bg-black max-md:p-20 max-md:text-white ${
@@ -30,7 +36,7 @@ const Header = ({ logo }: HeaderProps) => {
         >
           <IoMdClose className="h-7 w-7 transition hover:scale-105" />
         </button>
-        <ul className="flex items-center gap-x-5 max-md:flex-col max-md:gap-y-5">
+        <ul className="flex items-center gap-x-8 text-base max-md:flex-col max-md:gap-y-5">
           <li className="transition hover:text-mainYellow">
             <Link href={"#"}>Главная</Link>
           </li>

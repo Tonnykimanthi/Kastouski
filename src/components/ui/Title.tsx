@@ -4,7 +4,7 @@ type TextProps = {
 
 const Title = ({ text }: TextProps) => {
   return (
-    <h1 className="text-6xl font-medium max-lg:text-5xl max-md:text-4xl 2xl:text-8xl w-fit">
+    <h1 className="text-[68px] font-medium max-lg:text-4xl max-md:text-3xl 2xl:text-7xl w-fit uppercase">
       {text}
     </h1>
   );

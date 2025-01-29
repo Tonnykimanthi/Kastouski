@@ -18,15 +18,15 @@ const FeedbackBlock = () => {
   return (
     <section className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5">
       <BgLines path="/lines4.svg" />
-      <div className="flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center">
+      <div className="mx-auto flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[150rem]">
         <SubTitle title="Что говорят пользователи нашего приложения" />
-        <button className="flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden">
+        <button className="flex shrink-0 items-center gap-x-2 rounded-full border border-white px-[15px] py-[5px] text-[18px] uppercase transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden">
           Оставить отзыв
           <GoArrowUpRight className="h-7 w-7" />
         </button>
       </div>
 
-      <main className="relative mx-auto mt-5 w-full">
+      <main className="relative mx-auto mt-[50px] w-full 2xl:max-w-[150rem]">
         <Splide
           aria-label="News Slider"
           hasTrack={false}
@@ -50,14 +50,14 @@ const FeedbackBlock = () => {
           </SplideTrack>
           <div className="splide__arrows absolute top-1/2 -mt-7 w-full -translate-y-1/2 text-white">
             <button className="splide__arrow splide__arrow--prev absolute -left-12">
-              <GoChevronLeft className="h-10 w-10" />
+              <GoChevronLeft className="size-10" />
             </button>
             <button className="splide__arrow splide__arrow--next absolute -right-12">
-              <GoChevronRight className="h-10 w-10" />
+              <GoChevronRight className="size-10" />
             </button>
           </div>
         </Splide>
-        <button className="mx-auto mt-5 flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 text-white transition duration-300 hover:bg-white hover:text-black active:scale-95 sm:hidden">
+        <button className="mx-auto !mt-10 flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 text-white transition duration-300 hover:bg-white hover:text-black active:scale-95 sm:hidden">
           Оставить отзыв
           <GoArrowUpRight className="h-7 w-7" />
         </button>

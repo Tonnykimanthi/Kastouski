@@ -34,7 +34,7 @@ const FeaturesBlock = () => {
               key={index}
               className={`group flex cursor-pointer items-center gap-x-5 max-sm:flex-row-reverse max-sm:justify-self-start ${index % 2 !== 0 ? "flex-row-reverse justify-self-start" : "flex-row justify-self-end"}`}
             >
-              <span>
+              <span className={`${index % 2 === 0 ? 'sm:text-right' : ''}`}>
                 <h5 className="text-lg font-medium 2xl:text-2xl">
                   {feature.title}
                 </h5>

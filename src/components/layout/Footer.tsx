@@ -28,14 +28,20 @@ const Footer = ({
         <GooglePlayBtn styles={googlePlayBtnStyles} />
       </div>
 
-      <main className="mt-5 flex justify-between gap-5 max-md:flex-col-reverse max-md:items-center">
+      <main className="mt-5 flex max-w-7xl justify-between gap-5 max-md:flex-col-reverse max-md:items-center">
         <Link href={"#"}>
-          <Image width={100} height={100} src={`${logo}`} alt="Logo" />
+          <Image
+            width={185}
+            height={185}
+            src={`${logo}`}
+            alt="Logo"
+            className="w-[185px]"
+          />
         </Link>
         <div className="grid grid-cols-2 gap-5">
           {headerColsList.map((col, index) => (
             <div key={index}>
-              <h5 className="mb-2 font-medium">{col.heading}</h5>
+              <h5 className="mb-[20px] font-medium">{col.heading}</h5>
               {col.list.map((item, i) => (
                 <p
                   key={i}
