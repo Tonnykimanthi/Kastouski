@@ -21,7 +21,7 @@ const NewsCard = ({ date, title, paragraph, img }: NewsCardProps) => {
         />
       </div>
 
-      <div className="bg-white p-2">
+      <div className="bg-white p-2 2xl:p-8">
         <p className="font-light">
           <span>Обновление</span> | <span>{date}</span>
         </p>
@@ -29,7 +29,7 @@ const NewsCard = ({ date, title, paragraph, img }: NewsCardProps) => {
         <p className="font-light">{paragraph}</p>
       </div>
 
-      <button className="group flex w-full gap-x-2 border-t bg-white px-2 py-3">
+      <button className="group flex w-full gap-x-2 border-t bg-white px-2 py-3 2xl:px-8">
         Читать далее
         <GoArrowUpRight className="h-7 w-7 transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
       </button>

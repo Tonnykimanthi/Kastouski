@@ -26,7 +26,7 @@ const NewsBlock = () => {
         </button>
       </div>
 
-      <main className="relative mx-auto mt-5 w-full 2xl:max-w-[100rem]">
+      <main className="relative mx-auto mt-5 w-full 2xl:max-w-[150rem]">
         <Splide
           aria-label="News Slider"
           hasTrack={false}

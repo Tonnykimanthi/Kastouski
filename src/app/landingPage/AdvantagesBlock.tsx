@@ -17,21 +17,24 @@ const AdvantagesBlock = () => {
           height={500}
           src={"/graphic-card.svg"}
           alt="Graphic Card"
+          className="w-full"
         />
         <div className="grid gap-5">
-          <Image width={500} height={500} src={"/nn-card.svg"} alt="NN Card" />
+          <Image width={500} height={500} src={"/nn-card.svg"} alt="NN Card" className="w-full"/>
           <div className="grid grid-cols-2 gap-5">
             <Image
               width={500}
               height={500}
               src={"/currency-card.svg"}
               alt="Currency Card"
+              className="w-full"
             />
             <Image
               width={500}
               height={500}
               src={"/loyalty-card.svg"}
               alt="Loyalty Card"
+              className="w-full"
             />
           </div>
         </div>
