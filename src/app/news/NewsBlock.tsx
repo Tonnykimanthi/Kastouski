@@ -9,14 +9,14 @@ import SubTitle from "@/components/ui/SubTitle";
 import NewsItem from "@/components/ui/NewsItem";
 
 const NewsBlock = () => {
-  const [itemsPerPage, setItemsPerPage] = useState(5);
+  const itemsPerPage = 5;
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
 
   const currentItems = newsList.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(newsList.length / itemsPerPage);
 
-  const handlePageClick = (event: any) => {
+  const handlePageClick = (event: { selected: number }) => {
     const newOffset = (event.selected * itemsPerPage) % newsList.length;
     setItemOffset(newOffset);
   };
