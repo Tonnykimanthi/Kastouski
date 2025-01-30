@@ -58,7 +58,7 @@ const NewsBlock = () => {
             ))}
           </SplideTrack>
           <div className="splide__arrows text-whit absolute top-1/2 -mt-10 w-full -translate-y-1/2 max-md:hidden">
-            <button className="splide__arrow splide__arrow--prev absolute -left-9 2xl:-left-20">
+            <button className="splide__arrow splide__arrow--prev absolute -left-9 2xl:-left-10">
               <Image
                 width={50}
                 height={50}
@@ -67,7 +67,7 @@ const NewsBlock = () => {
                 className="w-5"
               />
             </button>
-            <button className="splide__arrow splide__arrow--next absolute -right-9 2xl:-right-20">
+            <button className="splide__arrow splide__arrow--next absolute -right-9 2xl:-right-10">
               <Image
                 width={50}
                 height={50}
