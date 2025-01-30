@@ -29,7 +29,7 @@ const FeaturesBlock = () => {
           alt="Phone"
           className="w-auto lg:hidden"
         />
-        <main className="grid grid-cols-2 gap-x-64 gap-y-10 border max-lg:gap-x-16 max-lg:gap-y-5 max-md:gap-x-14 max-sm:grid-cols-1 xl:mt-6 2xl:gap-x-[30rem]">
+        <main className="grid grid-cols-2 gap-x-64 gap-y-10 max-lg:gap-x-16 max-lg:gap-y-5 max-md:gap-x-14 max-sm:grid-cols-1 xl:mt-6 2xl:gap-x-[30rem]">
           {featuresList.map((feature, index) => (
             <div
               key={index}
