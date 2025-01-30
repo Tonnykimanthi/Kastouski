@@ -19,7 +19,7 @@ const NewsBlock = () => {
       id="news"
       className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5"
     >
-      <BgLines path="/lines2.svg" />
+      <BgLines path="/lines2.svg" styles="-top-28 max-md:-top-16"/>
       <div className="z-[2] mx-auto flex items-center justify-between text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[100rem]">
         <SubTitle title="Новости" />
         <button className="flex items-center gap-x-2 rounded-full border border-white px-3 py-1 uppercase transition duration-300 hover:bg-white/20 active:scale-95 max-sm:hidden 2xl:px-6 2xl:py-2 2xl:text-2xl">

@@ -29,14 +29,14 @@ const FeaturesBlock = () => {
           alt="Phone"
           className="w-auto lg:hidden"
         />
-        <main className="grid grid-cols-2 gap-x-64 gap-y-10 border max-lg:gap-x-16 max-lg:gap-y-5 max-md:gap-x-14 max-sm:grid-cols-1 xl:mt-6 2xl:gap-x-96">
+        <main className="grid grid-cols-2 gap-x-64 gap-y-10 border max-lg:gap-x-16 max-lg:gap-y-5 max-md:gap-x-14 max-sm:grid-cols-1 xl:mt-6 2xl:gap-x-[30rem]">
           {featuresList.map((feature, index) => (
             <div
               key={index}
-              className={`group flex w-fit cursor-pointer items-center gap-x-5 border max-sm:flex-row-reverse max-sm:justify-self-start 2xl:max-w-md ${index % 2 !== 0 ? "flex-row-reverse justify-self-start" : "justify-self-end"}`}
+              className={`group flex w-fit cursor-pointer items-center gap-x-5 max-sm:flex-row-reverse max-sm:justify-self-start 2xl:max-w-md ${index % 2 !== 0 ? "flex-row-reverse justify-self-start" : "justify-self-end"}`}
             >
               <div
-                className={`border ${index % 2 === 0 ? "sm:text-right" : "sm:text-left"}`}
+                className={`${index % 2 === 0 ? "sm:text-right" : "sm:text-left"}`}
               >
                 <h5 className="font-medium 2xl:text-[21px]">{feature.title}</h5>
                 <p className="font-light 2xl:text-[18px]">
