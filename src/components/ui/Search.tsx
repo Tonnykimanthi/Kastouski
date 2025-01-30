@@ -17,7 +17,6 @@ const Search = ({ placeholder, styles }: SearchProps) => {
         placeholder={placeholder}
         className="size-full py-[10px] pl-12 outline-none"
       />
-      {/* <IoSearchOutline className="text-gray-400" /> */}
       <Image
         width={25}
         height={25}
