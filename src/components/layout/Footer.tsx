@@ -33,7 +33,7 @@ const Footer = ({
         <GooglePlayBtn styles={googlePlayBtnStyles} />
       </div>
 
-      <main className="mx-auto mt-5 flex max-w-[150rem] gap-24 max-md:flex-col-reverse max-md:items-center xl:gap-x-72">
+      <main className="mx-auto mt-10 flex max-w-[150rem] gap-24 max-md:flex-col-reverse max-md:items-center xl:gap-x-72">
         <Link href={"#"}>
           <Image
             width={185}

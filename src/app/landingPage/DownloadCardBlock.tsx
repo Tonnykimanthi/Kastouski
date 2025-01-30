@@ -14,9 +14,9 @@ const DownloadCardBlock = () => {
           paragraph="Скачайте FinFlow прямо сейчас и с лёгкостью управляйте своими финансами. Получите доступ к персонализированной аналитической информации, управляйте бюджетами, и многое другое - все это в одном надежном месте."
         />
       </div>
-      <div className="relative mx-auto mt-10 flex h-80 max-w-[150rem] flex-col items-center overflow-hidden rounded-xl bg-white pt-5 md:h-[30rem] lg:h-[40rem] lg:px-10 lg:pt-7 xl:h-[45rem] 2xl:h-[60rem] 2xl:pt-[50px] 2xl:px-32">
+      <div className="relative mx-auto mt-10 flex h-80 max-w-[150rem] flex-col items-center overflow-hidden rounded-xl bg-white pt-5 md:h-[30rem] lg:h-[40rem] lg:px-10 lg:pt-7 xl:h-[45rem] 2xl:h-[60rem] 2xl:px-32 2xl:pt-[50px]">
         <GooglePlayBtn styles="border border-black md:self-start ml-5" />
-        <div className="z-20 mt-auto w-full border">
+        <div className="z-20 mt-auto w-full">
           <Image
             width={500}
             height={500}
@@ -30,7 +30,7 @@ const DownloadCardBlock = () => {
           height={500}
           src={"/yellow-rectangle.svg"}
           alt="Yellow Rectangle"
-          className="absolute -left-4 top-20 w-24 sm:w-40 md:top-36 md:w-52 lg:w-72 xl:w-80 2xl:w-96 2xl:top-52 2xl:left-0"
+          className="absolute -left-4 top-20 w-24 sm:w-40 md:top-36 md:w-52 lg:w-72 xl:w-80 2xl:left-0 2xl:top-52 2xl:w-96"
         />
         <Image
           width={500}

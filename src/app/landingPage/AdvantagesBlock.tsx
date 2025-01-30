@@ -11,7 +11,7 @@ const AdvantagesBlock = () => {
           paragraph="Совершите плавный переход к финансовому мастерству с помощью интуитивно понятных инструментов, персонализированной информации и безопасных транзакций."
         />
       </div>
-      <main className="mt-5 grid grid-cols-2 gap-5 max-sm:grid-cols-1">
+      <main className="mt-10 grid grid-cols-2 gap-5 max-sm:grid-cols-1">
         <Image
           width={500}
           height={500}
