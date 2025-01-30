@@ -12,7 +12,7 @@ const page = () => {
       <div className="px-16 py-5 max-lg:px-10 max-md:px-5">
         <Header logo="/logo-black.svg" />
       </div>
-      <main className="max-w-[150rem] px-16 py-10 max-lg:px-10 max-md:px-5 mx-auto">
+      <main className="mx-auto max-w-[150rem] px-16 py-10 max-lg:px-10 max-md:px-5">
         <div className="flex items-center justify-between gap-5 max-md:flex-col">
           <Breadcrumbs />
           <Search placeholder="Поиск" styles="relative" />

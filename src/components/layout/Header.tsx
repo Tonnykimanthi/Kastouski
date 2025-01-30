@@ -22,7 +22,7 @@ const Header = ({ logo }: HeaderProps) => {
           height={185}
           src={logo}
           alt="Logo"
-          className="w-[185px]"
+          className="w-[185px] xl:w-64 2xl:w-80"
         />
       </Link>
       <nav
@@ -36,7 +36,7 @@ const Header = ({ logo }: HeaderProps) => {
         >
           <IoMdClose className="h-7 w-7 transition hover:scale-105" />
         </button>
-        <ul className="flex items-center gap-x-8 text-base max-md:flex-col max-md:gap-y-5">
+        <ul className="flex items-center gap-x-8 text-base max-md:flex-col max-md:gap-y-5 xl:text-xl 2xl:text-2xl">
           <li className="transition hover:text-mainYellow">
             <Link href={"#"}>Главная</Link>
           </li>
