@@ -3,6 +3,7 @@
 // @ts-expect-error Splide types are missing or incorrect
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
+import Image from "next/image";
 // Components
 import SubTitle from "@/components/ui/SubTitle";
 import Feedback from "@/components/ui/Feedback";
@@ -11,8 +12,6 @@ import BgLines from "@/components/ui/BgLines";
 import { feedbacksList } from "@/constants/feedbacksList";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
-import { GoChevronLeft } from "react-icons/go";
-import { GoChevronRight } from "react-icons/go";
 
 const FeedbackBlock = () => {
   return (
@@ -20,9 +19,15 @@ const FeedbackBlock = () => {
       <BgLines path="/lines4.svg" />
       <div className="mx-auto flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[150rem]">
         <SubTitle title="Что говорят пользователи нашего приложения" />
-        <button className="flex shrink-0 items-center gap-x-2 rounded-full border border-white px-[15px] py-[5px] text-[18px] uppercase transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden">
+        <button className="flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 uppercase transition duration-300 hover:bg-white/20 active:scale-95 max-sm:hidden 2xl:px-6 2xl:py-2 2xl:text-2xl">
           Оставить отзыв
-          <GoArrowUpRight className="h-7 w-7" />
+          <Image
+            width={50}
+            height={50}
+            src={"/arrow-up-right.svg"}
+            alt="Arrow up right"
+            className="w-4"
+          />
         </button>
       </div>
 
@@ -48,12 +53,24 @@ const FeedbackBlock = () => {
               </SplideSlide>
             ))}
           </SplideTrack>
-          <div className="splide__arrows absolute top-1/2 -mt-3 w-full -translate-y-1/2 text-white max-sm:hidden">
+          <div className="splide__arrows absolute top-1/2 -mt-6 w-full -translate-y-1/2 text-white max-md:hidden">
             <button className="splide__arrow splide__arrow--prev absolute -left-10 max-md:-left-8">
-              <GoChevronLeft className="size-10" />
+              <Image
+                width={50}
+                height={50}
+                src={"/arrow-left.svg"}
+                alt="Arrow left"
+                className="w-5"
+              />
             </button>
             <button className="splide__arrow splide__arrow--next absolute -right-10 max-md:-right-8">
-              <GoChevronRight className="size-10" />
+              <Image
+                width={50}
+                height={50}
+                src={"/arrow-right.svg"}
+                alt="Arrow right"
+                className="w-5"
+              />
             </button>
           </div>
         </Splide>

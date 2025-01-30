@@ -11,8 +11,8 @@ const Title = () => {
           <Image
             width={100}
             height={100}
-            src={"/arrow-up-right.svg"}
-            alt="Arrow Up Right"
+            src={"/yellow-arrow-up-right.svg"}
+            alt="Yellow arrow up right"
             className="w-[102px] max-lg:w-20 max-md:w-16 2xl:w-64"
           />
         </div>

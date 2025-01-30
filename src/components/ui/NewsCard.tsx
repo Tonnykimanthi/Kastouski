@@ -30,9 +30,15 @@ const NewsCard = ({ date, title, paragraph, img }: NewsCardProps) => {
         <p className="text-[18px] font-light">{paragraph}</p>
       </div>
 
-      <button className="group flex w-full gap-x-2 border-t bg-white p-[25px] text-[18px] uppercase 2xl:px-8">
+      <button className="group flex w-full gap-x-2 border-t bg-white p-[25px] text-[18px] uppercase 2xl:px-8 items-center">
         Читать далее
-        <GoArrowUpRight className="h-7 w-7 transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
+        <Image
+          width={50}
+          height={50}
+          src={"/arrow-up-right-black.svg"}
+          alt="Arrow up right"
+          className="w-4 transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+        />
       </button>
     </div>
   );

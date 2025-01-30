@@ -7,6 +7,7 @@ import { newsList } from "@/constants/newsList";
 // Components
 import SubTitle from "@/components/ui/SubTitle";
 import NewsItem from "@/components/ui/NewsItem";
+import NextArrow, { PrevArrow } from "@/components/ui/Arrow";
 
 const NewsBlock = () => {
   const itemsPerPage = 5;
@@ -35,16 +36,16 @@ const NewsBlock = () => {
         <div className="mt-[60px]">
           <ReactPaginate
             breakLabel="..."
-            nextLabel=">"
+            nextLabel=<NextArrow />
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}
             pageCount={pageCount}
-            previousLabel="<"
+            previousLabel=<PrevArrow />
             containerClassName="flex items-center justify-center mt-5 gap-x-2"
             pageClassName="rounded-lg px-3 py-1 hover:bg-mainGreen hover:text-white cursor-pointer"
             activeClassName="bg-mainGreen text-white"
-            previousClassName="rounded-lg px-3 py-1 hover:bg-gray-300 cursor-pointer"
-            nextClassName="rounded-lg px-3 py-1 hover:bg-gray-300 cursor-pointer"
+            previousClassName="rounded-lg px-3 py-1.5 hover:bg-gray-300 cursor-pointer"
+            nextClassName="rounded-lg px-3 py-1.5 hover:bg-gray-300 cursor-pointer"
           />
         </div>
       </div>

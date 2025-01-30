@@ -1,24 +1,20 @@
-// Icons
-import { LuFacebook } from "react-icons/lu";
-import { CiInstagram } from "react-icons/ci";
-import { PiTelegramLogoThin } from "react-icons/pi";
-import { CiTwitter } from "react-icons/ci";
+
 
 export const socialLinksList = [
   {
     url: "",
-    icon: LuFacebook,
+    icon: "/facebook.svg",
   },
   {
     url: "",
-    icon: CiInstagram,
+    icon: "/instagram.svg",
   },
   {
     url: "",
-    icon: PiTelegramLogoThin,
+    icon: "/telegram.svg",
   },
   {
     url: "",
-    icon: CiTwitter,
+    icon: "/twitter.svg",
   },
 ];

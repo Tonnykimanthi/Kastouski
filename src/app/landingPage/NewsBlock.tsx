@@ -3,6 +3,7 @@
 // @ts-expect-error Splide types are missing or incorrect
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
+import Image from "next/image";
 // Components
 import SubTitle from "@/components/ui/SubTitle";
 import NewsCard from "@/components/ui/NewsCard";
@@ -11,18 +12,25 @@ import BgLines from "@/components/ui/BgLines";
 import { newsCardsList } from "@/constants/newsCardsList";
 // Icons
 import { GoArrowUpRight } from "react-icons/go";
-import { GoChevronLeft } from "react-icons/go";
-import { GoChevronRight } from "react-icons/go";
 
 const NewsBlock = () => {
   return (
-    <section id="news" className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5">
+    <section
+      id="news"
+      className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5"
+    >
       <BgLines path="/lines2.svg" />
       <div className="z-[2] mx-auto flex items-center justify-between text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[100rem]">
         <SubTitle title="Новости" />
-        <button className="flex items-center gap-x-2 rounded-full border border-white px-3 py-1 uppercase transition duration-300 hover:bg-white hover:text-black active:scale-95 max-sm:hidden 2xl:px-6 2xl:py-2 2xl:text-2xl">
+        <button className="flex items-center gap-x-2 rounded-full border border-white px-3 py-1 uppercase transition duration-300 hover:bg-white/20 active:scale-95 max-sm:hidden 2xl:px-6 2xl:py-2 2xl:text-2xl">
           Все новости
-          <GoArrowUpRight className="h-7 w-7" />
+          <Image
+            width={50}
+            height={50}
+            src={"/arrow-up-right.svg"}
+            alt="Arrow up right"
+            className="w-4"
+          />
         </button>
       </div>
 
@@ -49,12 +57,24 @@ const NewsBlock = () => {
               </SplideSlide>
             ))}
           </SplideTrack>
-          <div className="splide__arrows absolute top-1/2 w-full -translate-y-1/2 text-white">
+          <div className="splide__arrows text-whit absolute top-1/2 -mt-10 w-full -translate-y-1/2 max-md:hidden">
             <button className="splide__arrow splide__arrow--prev absolute -left-9 2xl:-left-20">
-              <GoChevronLeft className="size-10 2xl:size-20" />
+              <Image
+                width={50}
+                height={50}
+                src={"/arrow-left.svg"}
+                alt="Arrow left"
+                className="w-5"
+              />
             </button>
             <button className="splide__arrow splide__arrow--next absolute -right-9 2xl:-right-20">
-              <GoChevronRight className="size-10 2xl:size-20" />
+              <Image
+                width={50}
+                height={50}
+                src={"/arrow-right.svg"}
+                alt="Arrow right"
+                className="w-5"
+              />
             </button>
           </div>
         </Splide>

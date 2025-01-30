@@ -1,3 +1,4 @@
+import Image from "next/image";
 // Icons
 import { IoSearchOutline } from "react-icons/io5";
 
@@ -16,9 +17,16 @@ const Search = ({ placeholder, styles }: SearchProps) => {
         name="search"
         id="search"
         placeholder={placeholder}
-        className="size-full py-[10px] pl-[40px] outline-none"
+        className="size-full py-[10px] pl-12 outline-none"
       />
-      <IoSearchOutline className="absolute left-4 top-1/2 h-6 w-6 -translate-y-1/2 text-gray-400" />
+      {/* <IoSearchOutline className="text-gray-400" /> */}
+      <Image
+        width={25}
+        height={25}
+        src={"/search.svg"}
+        alt="Search icon"
+        className="absolute left-4 top-1/2 h-6 w-6 -translate-y-1/2"
+      />
     </div>
   );
 };

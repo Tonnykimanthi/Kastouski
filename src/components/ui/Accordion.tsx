@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-// Icons
-import { GoChevronDown } from "react-icons/go";
+import Image from "next/image";
 
 type AccordionProps = {
   quiz: string;
@@ -45,7 +44,7 @@ const Accordion = ({ quiz, answer, index }: AccordionProps) => {
   return (
     <label
       htmlFor={`radio${index}`}
-      className="bg-lightGreen/80 grid rounded-xl p-[40px] has-[:checked]:bg-mainYellow"
+      className="grid rounded-xl bg-lightGreen/80 p-[40px] has-[:checked]:bg-mainYellow"
     >
       <input
         type="checkbox"
@@ -55,7 +54,13 @@ const Accordion = ({ quiz, answer, index }: AccordionProps) => {
       />
       <div className="flex cursor-pointer items-center justify-between">
         <h5 className="text-xl sm:text-[32px] 2xl:text-5xl">{quiz}</h5>
-        <GoChevronDown className="accordion-icon size-10 gap-5 transition 2xl:size-20" />
+        <Image
+          width={50}
+          height={50}
+          src={"/arrow-down.svg"}
+          alt="Arrow down"
+          className="accordion-icon w-[51px] transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+        />
       </div>
 
       <div className="grid grid-rows-[0fr] transition-all duration-200 peer-checked:grid-rows-[1fr]">

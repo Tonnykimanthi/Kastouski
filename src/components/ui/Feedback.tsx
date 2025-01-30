@@ -14,7 +14,7 @@ const Feedback = ({ avatar, name, description }: FeedbackProps) => {
   return (
     <div className="h-full pt-10">
       <div className="h-full rounded-xl bg-white p-[42px] pt-0 max-lg:p-8">
-        <div className="flex items-center max-lg:-mt-10">
+        <div className="flex items-center max-lg:-mt-10 max-md:flex-col">
           <Image
             width={100}
             height={100}

@@ -1,19 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
-import { IconType } from "react-icons";
 
 type SocialLinksProps = {
   url: string;
-  icon: IconType;
+  icon: string;
   styles?: string;
 };
 
-const SocialLinks = ({ url, icon: Icon, styles }: SocialLinksProps) => {
+const SocialLinks = ({ url, icon, styles }: SocialLinksProps) => {
   return (
     <Link href={url}>
       <button
-        className={`rounded-full border border-transparent bg-mainYellow p-3 transition duration-300 xl:p-[25px] ${styles}`}
+        className={`flex size-[62px] items-center justify-center rounded-full border border-transparent bg-mainYellow p-3 transition duration-300 xl:p-[25px] ${styles}`}
       >
-        <Icon className="h-7 w-7" />
+        <Image
+          width={25}
+          height={25}
+          src={icon}
+          alt={`${icon} icon`}
+          className="w-auto"
+        />
       </button>
     </Link>
   );
