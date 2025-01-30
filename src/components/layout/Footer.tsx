@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 // Constants
-import { headerColsList } from "@/constants/headerCols";
+import { footerLinksList } from "@/constants/footerLinksList";
 // Components
 import GooglePlayBtn from "../ui/GooglePlayBtn";
 import SubTitle from "../ui/SubTitle";
@@ -44,16 +44,16 @@ const Footer = ({
           />
         </Link>
         <div className="grid grid-cols-2 gap-5">
-          {headerColsList.map((col, index) => (
+          {footerLinksList.map((col, index) => (
             <div key={index}>
               <h5 className="mb-[20px]">{col.heading}</h5>
-              {col.list.map((item, i) => (
-                <Link href={"#"}>
+              {col.lists.map((item, i) => (
+                <Link href={item.path}>
                   <p
                     key={i}
                     className={`ursor-pointer transition hover:scale-y-110 ${colsListStyles}`}
                   >
-                    {item}
+                    {item.label}
                   </p>
                 </Link>
               ))}
