@@ -1,6 +1,4 @@
 import Image from "next/image";
-// Icons
-import { IoSearchOutline } from "react-icons/io5";
 
 type SearchProps = {
   placeholder: string;

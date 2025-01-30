@@ -48,9 +48,8 @@ const Footer = ({
             <div key={index}>
               <h5 className="mb-[20px]">{col.heading}</h5>
               {col.lists.map((item, i) => (
-                <Link href={item.path}>
+                <Link key={i} href={item.path}>
                   <p
-                    key={i}
                     className={`ursor-pointer transition hover:scale-y-110 ${colsListStyles}`}
                   >
                     {item.label}

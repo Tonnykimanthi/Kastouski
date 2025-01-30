@@ -1,6 +1,4 @@
 import Image from "next/image";
-// Icons
-import { GoArrowUpRight } from "react-icons/go";
 
 type NewsCardProps = {
   date: string;
@@ -30,7 +28,7 @@ const NewsCard = ({ date, title, paragraph, img }: NewsCardProps) => {
         <p className="text-[18px] font-light">{paragraph}</p>
       </div>
 
-      <button className="group flex w-full gap-x-2 border-t bg-white p-[25px] text-[18px] uppercase 2xl:px-8 items-center">
+      <button className="group flex w-full items-center gap-x-2 border-t bg-white p-[25px] text-[18px] uppercase 2xl:px-8">
         Читать далее
         <Image
           width={50}

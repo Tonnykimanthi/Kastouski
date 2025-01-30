@@ -4,8 +4,6 @@ import Header from "../../components/layout/Header";
 import Title from "../../components/ui/Title";
 import BgLines from "@/components/ui/BgLines";
 import GooglePlayBtn from "@/components/ui/GooglePlayBtn";
-// Icons
-import { GoArrowUpRight } from "react-icons/go";
 
 const HeroSection = () => {
   return (
