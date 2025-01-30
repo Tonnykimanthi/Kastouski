@@ -23,7 +23,7 @@ const page = () => {
         </div>
       </main>
       <Footer
-        styles="bg-mainGreen text-white"
+        styles="bg-lightMainGreen text-white"
         logo="/logo.svg"
         socialIconsStyles="text-black hover:bg-transparent hover:border-black"
       />
