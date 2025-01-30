@@ -11,14 +11,14 @@ const SocialLinks = ({ url, icon, styles }: SocialLinksProps) => {
   return (
     <Link href={url}>
       <button
-        className={`flex size-[62px] items-center justify-center rounded-full border border-transparent bg-mainYellow p-3 transition duration-300 xl:p-[25px] ${styles}`}
+        className={`flex size-[62px] items-center justify-center rounded-full border border-transparent bg-mainYellow p-3 transition duration-300 ${styles}`}
       >
         <Image
-          width={25}
-          height={25}
+          width={100}
+          height={100}
           src={icon}
-          alt={`${icon} icon`}
-          className="w-auto"
+          alt="Social Link Icon"
+          className="h-full w-full border"
         />
       </button>
     </Link>

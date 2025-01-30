@@ -4,9 +4,9 @@ const Title = () => {
   return (
     <div className="mx-auto mt-10 w-fit max-w-[110rem] max-2xl:mt-20 max-sm:text-center 2xl:mt-32">
       <div className="flex items-center gap-x-5">
-        <h1 className="w-full text-[68px] font-medium uppercase max-xl:text-5xl max-lg:text-4xl max-md:text-3xl 2xl:text-9xl">
+        <h2 className="w-full text-[68px] font-medium uppercase max-xl:text-5xl max-md:text-3xl 2xl:text-9xl">
           Лучший способ управлять
-        </h1>
+        </h2>
         <div className="max-sm:hidden">
           <Image
             width={100}
@@ -22,9 +22,9 @@ const Title = () => {
           Уже более 200 человек используют наше приложение. Удобный контроль за
           собственными доходами и расходами, которые помогут сохранить деньги.
         </p>
-        <h1 className="w-fit text-[68px] font-medium uppercase max-xl:text-5xl max-lg:text-4xl max-md:text-3xl 2xl:text-9xl">
+        <h2 className="w-fit text-[68px] font-medium uppercase max-xl:text-5xl max-md:text-3xl 2xl:text-9xl">
           своими финансами
-        </h1>
+        </h2>
       </div>
     </div>
   );
