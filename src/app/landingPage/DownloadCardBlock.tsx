@@ -7,7 +7,7 @@ import GooglePlayBtn from "@/components/ui/GooglePlayBtn";
 const DownloadCardBlock = () => {
   return (
     <section className="relative bg-mainGreen p-16 text-white max-lg:px-10 max-md:px-5">
-      <BgLines path="/lines3.svg" styles="top-56 max-md:top-56"/>
+      <BgLines path="/lines3.svg" styles="top-56 max-md:top-56" />
       <div className="mx-auto max-w-[150rem] text-center">
         <SubTitle
           title="Скачайте мобильное приложение FinFlow"
