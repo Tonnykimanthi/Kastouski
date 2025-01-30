@@ -19,7 +19,7 @@ const DownloadCardBlock = () => {
           height={500}
           src={"/download-cards.svg"}
           alt="Download Cards"
-          className="w-auto"
+          className="w-full"
         />
       </div>
     </section>

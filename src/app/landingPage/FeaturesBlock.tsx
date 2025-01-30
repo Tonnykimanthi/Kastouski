@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const FeaturesBlock = () => {
   return (
-    <section className="p-16 max-lg:px-10 max-md:px-5">
+    <section id="possibilities" className="p-16 max-lg:px-10 max-md:px-5">
       <div className="text-center">
         <SubTitle
           title="Возможности"
@@ -34,11 +34,11 @@ const FeaturesBlock = () => {
               key={index}
               className={`group flex cursor-pointer items-center gap-x-5 max-sm:flex-row-reverse max-sm:justify-self-start ${index % 2 !== 0 ? "flex-row-reverse justify-self-start" : "flex-row justify-self-end"}`}
             >
-              <span className={`${index % 2 === 0 ? 'sm:text-right' : ''}`}>
-                <h5 className="text-lg font-medium 2xl:text-2xl">
+              <span className={`${index % 2 === 0 ? "sm:text-right" : ""}`}>
+                <h5 className="text-[21px] font-medium 2xl:text-2xl">
                   {feature.title}
                 </h5>
-                <p className="text-sm font-light 2xl:text-lg">
+                <p className="text-[18px] font-light 2xl:text-lg">
                   {feature.paragraph}
                 </p>
               </span>

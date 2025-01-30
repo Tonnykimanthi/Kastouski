@@ -9,28 +9,28 @@ const Article = () => {
     <article className="flex-[2] max-lg:flex-[1] max-md:flex max-md:flex-col max-md:items-center">
       <div>
         <SubTitle title="Функция перевода средств" />
-        <p className="mt-2 font-light">
+        <p className="mt-2.5 font-light text-black/50">
           Android 4.9.x Обновление (Ноябрь 2023)
         </p>
       </div>
-      <div className="mt-5 flex items-center gap-x-4">
+      <div className="mt-[30px] flex items-center gap-x-5">
         <Image
           width={50}
           height={50}
-          src={"/rounded-logo.svg"}
+          src={"/rounded-logo.png"}
           alt="Logo"
-          className="w-auto"
+          className="w-[66px]"
         />
         <span>
-          <p className="font-light">FinFlow поддержка</p>
-          <p className="font-extralight">
+          <p className="text-[18px] font-light">FinFlow поддержка</p>
+          <p className="text-[14px] text-black/50">
             10 месяцев назад | <span>Обновлено</span>
           </p>
         </span>
       </div>
 
       {/* Content */}
-      <div className="mt-5">
+      <div className="mt-[60px] text-[18px] font-light">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat
         omnis eaque tempora, temporibus itaque soluta corporis placeat nobis
         maxime porro voluptates architecto eos beatae. Nisi quidem iure magni

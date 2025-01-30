@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AdvantagesBlock = () => {
   return (
-    <section className="p-16 max-lg:px-10 max-md:px-5">
+    <section id="advantages" className="p-16 max-lg:px-10 max-md:px-5">
       <div className="text-center">
         <SubTitle
           title="Получите наилучшие впечатления"
@@ -20,7 +20,13 @@ const AdvantagesBlock = () => {
           className="w-full"
         />
         <div className="grid gap-5">
-          <Image width={500} height={500} src={"/nn-card.svg"} alt="NN Card" className="w-full"/>
+          <Image
+            width={500}
+            height={500}
+            src={"/nn-card.svg"}
+            alt="NN Card"
+            className="w-full"
+          />
           <div className="grid grid-cols-2 gap-5">
             <Image
               width={500}

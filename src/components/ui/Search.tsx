@@ -16,7 +16,7 @@ const Search = ({ placeholder, styles }: SearchProps) => {
         name="search"
         id="search"
         placeholder={placeholder}
-        className="size-full py-3 pl-12 pr-5 outline-none"
+        className="size-full py-[10px] pl-[40px] outline-none"
       />
       <IoSearchOutline className="absolute left-4 top-1/2 h-6 w-6 -translate-y-1/2 text-gray-400" />
     </div>

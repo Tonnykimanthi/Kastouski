@@ -36,7 +36,7 @@ const FeedbackBlock = () => {
             gap: "1rem",
             pagination: true,
             breakpoints: {
-              768: { perPage: 2 },
+              1024: { perPage: 2 },
               640: { perPage: 1 },
             },
           }}
@@ -48,11 +48,11 @@ const FeedbackBlock = () => {
               </SplideSlide>
             ))}
           </SplideTrack>
-          <div className="splide__arrows absolute top-1/2 -mt-7 w-full -translate-y-1/2 text-white">
-            <button className="splide__arrow splide__arrow--prev absolute -left-12">
+          <div className="splide__arrows absolute top-1/2 -mt-3 w-full -translate-y-1/2 text-white max-sm:hidden">
+            <button className="splide__arrow splide__arrow--prev absolute -left-10 max-md:-left-8">
               <GoChevronLeft className="size-10" />
             </button>
-            <button className="splide__arrow splide__arrow--next absolute -right-12">
+            <button className="splide__arrow splide__arrow--next absolute -right-10 max-md:-right-8">
               <GoChevronRight className="size-10" />
             </button>
           </div>

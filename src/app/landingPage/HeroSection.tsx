@@ -13,11 +13,11 @@ const HeroSection = () => {
       <BgLines path="/lines.svg" />
       <Header logo="/logo.svg" />
 
-      <div className="mx-auto mt-10 w-fit max-2xl:mt-20 max-xl:text-center">
+      <div className="mx-auto mt-10 w-fit max-w-[150rem] max-2xl:mt-20 max-xl:text-center">
         <div className="flex items-center gap-x-5">
           <Title text="Лучший способ управлять" />
           <span className="rounded-full bg-mainYellow p-2 max-md:hidden">
-            <GoArrowUpRight className="2xl:size-[102px] text-black size-20" />
+            <GoArrowUpRight className="size-20 text-black 2xl:size-[102px]" />
           </span>
         </div>
         <div className="mt-2 flex items-center gap-x-5 gap-y-5 max-md:mt-0 max-md:flex-col-reverse max-md:items-center">
@@ -30,7 +30,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="relative -mt-32 flex flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10">
+      <div className="relative -mt-32 flex flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10 max-w-[150rem] mx-auto">
         <Image width={2000} height={2000} src={"phones.svg"} alt="Phones" />
         <div className="bottom-24 left-0 w-auto max-lg:bottom-16 max-md:bottom-10 md:absolute">
           <GooglePlayBtn />

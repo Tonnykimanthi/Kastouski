@@ -10,7 +10,10 @@ const Breadcrumbs = () => {
   return (
     <ul className="flex gap-x-2">
       {breadcrumbsData.map((item, index) => (
-        <li key={index} className="flex items-center gap-x-2 text-lg font-light">
+        <li
+          key={index}
+          className="flex items-center gap-x-2 text-lg font-light"
+        >
           {index === breadcrumbsData.length - 1 ? (
             item.label
           ) : (

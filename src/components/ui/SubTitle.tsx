@@ -4,10 +4,12 @@ type SubTitleProps = {
   styles?: string;
 };
 
-const SubTitle = ({ title, paragraph }: SubTitleProps) => {
+const SubTitle = ({ title, paragraph, styles }: SubTitleProps) => {
   return (
     <>
-      <h2 className="text-[48px] font-medium max-lg:text-3xl max-sm:text-2xl 2xl:text-7xl">
+      <h2
+        className={`text-[48px] font-medium max-lg:text-3xl max-sm:text-2xl 2xl:text-7xl ${styles}`}
+      >
         {title}
       </h2>
       {paragraph ? (

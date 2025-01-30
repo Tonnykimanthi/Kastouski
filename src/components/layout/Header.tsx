@@ -15,11 +15,11 @@ const Header = ({ logo }: HeaderProps) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between gap-x-12">
-      <Link href={"#"}>
+    <header className="flex items-center justify-between gap-x-12 max-w-[150rem] mx-auto">
+      <Link href={"/"}>
         <Image
-          width={150}
-          height={100}
+          width={185}
+          height={185}
           src={logo}
           alt="Logo"
           className="w-[185px]"
@@ -41,16 +41,16 @@ const Header = ({ logo }: HeaderProps) => {
             <Link href={"#"}>Главная</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"#"}>Новости</Link>
+            <Link href={"#news"}>Новости</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"#"}>Возможности</Link>
+            <Link href={"#possibilities"}>Возможности</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"#"}>Преимущества</Link>
+            <Link href={"#advantages"}>Преимущества</Link>
           </li>
           <li className="transition hover:text-mainYellow">
-            <Link href={"#"}>FAQs</Link>
+            <Link href={"#faqs"}>FAQs</Link>
           </li>
         </ul>
       </nav>

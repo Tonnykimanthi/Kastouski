@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 0.75rem;
-  margin-top: 1rem;
+  margin-top: 40px !important;
 }
 
 .splide__pagination__page {

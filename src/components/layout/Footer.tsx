@@ -13,6 +13,7 @@ type FooterProps = {
   logo?: string;
   socialIconsStyles?: string;
   googlePlayBtnStyles?: string;
+  colsListStyles?: string;
 };
 
 const Footer = ({
@@ -20,15 +21,19 @@ const Footer = ({
   logo,
   socialIconsStyles,
   googlePlayBtnStyles,
+  colsListStyles,
 }: FooterProps) => {
   return (
     <footer className={`p-16 ${styles}`}>
-      <div className="flex items-center justify-between gap-5 max-sm:flex-col max-sm:text-center">
-        <SubTitle title="Управляйте финансами с лёгкостью" />
+      <div className="mx-auto flex max-w-[150rem] items-center justify-between gap-5 max-sm:flex-col max-sm:text-center">
+        <SubTitle
+          title="Управляйте финансами с лёгкостью"
+          styles="!font-normal"
+        />
         <GooglePlayBtn styles={googlePlayBtnStyles} />
       </div>
 
-      <main className="mt-5 flex max-w-7xl justify-between gap-5 max-md:flex-col-reverse max-md:items-center">
+      <main className="mx-auto mt-5 flex max-w-[150rem] gap-24 max-md:flex-col-reverse max-md:items-center xl:gap-x-72">
         <Link href={"#"}>
           <Image
             width={185}
@@ -41,22 +46,24 @@ const Footer = ({
         <div className="grid grid-cols-2 gap-5">
           {headerColsList.map((col, index) => (
             <div key={index}>
-              <h5 className="mb-[20px] font-medium">{col.heading}</h5>
+              <h5 className="mb-[20px]">{col.heading}</h5>
               {col.list.map((item, i) => (
-                <p
-                  key={i}
-                  className="cursor-pointer font-light transition hover:scale-y-110"
-                >
-                  {item}
-                </p>
+                <Link href={"#"}>
+                  <p
+                    key={i}
+                    className={`ursor-pointer transition hover:scale-y-110 ${colsListStyles}`}
+                  >
+                    {item}
+                  </p>
+                </Link>
               ))}
             </div>
           ))}
         </div>
       </main>
 
-      <div className="mt-5 flex items-center justify-between gap-5 max-sm:flex-col">
-        <p>2024 © Все права защищены</p>
+      <div className="mx-auto mt-5 flex max-w-[150rem] items-center justify-between gap-5 max-sm:flex-col">
+        <p className={`${colsListStyles}`}>2024 © Все права защищены</p>
         <div className="flex gap-5">
           {socialLinksList.map((item, index) => (
             <SocialLink key={index} {...item} styles={socialIconsStyles} />

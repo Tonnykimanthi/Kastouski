@@ -3,9 +3,9 @@ import Accordion from "@/components/ui/Accordion";
 import SubTitle from "@/components/ui/SubTitle";
 import { questionsList } from "@/constants/questionsList";
 
-const QuestionBlock = () => {
+const FaqsBlock = () => {
   return (
-    <section className="p-16 max-lg:px-10 max-md:px-5">
+    <section id="faqs" className="p-16 max-lg:px-10 max-md:px-5">
       <div className="mx-auto 2xl:max-w-[150rem]">
         <SubTitle title="Часто задаваемые вопросы" />
       </div>
@@ -18,4 +18,4 @@ const QuestionBlock = () => {
   );
 };
 
-export default QuestionBlock;
+export default FaqsBlock;

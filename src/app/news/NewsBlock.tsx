@@ -23,29 +23,30 @@ const NewsBlock = () => {
 
   return (
     <>
-      <div>
-        <SubTitle title="Последние обновления" />
+      <div className="text-center">
+        <SubTitle title="Последние обновления" styles="!text-[35px]" />
       </div>
       <div>
-        <div className="mt-5 flex flex-col gap-y-5">
+        <div className="mt-[50px] flex flex-col gap-y-10 pb-[30px] xl:gap-y-[70px]">
           {currentItems.map((news, index) => (
             <NewsItem key={index} {...news} />
           ))}
         </div>
-
-        <ReactPaginate
-          breakLabel="..."
-          nextLabel=">"
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={3}
-          pageCount={pageCount}
-          previousLabel="<"
-          containerClassName="flex items-center justify-center mt-5 gap-x-2"
-          pageClassName="rounded-lg px-3 py-1 hover:bg-mainGreen hover:text-white cursor-pointer"
-          activeClassName="bg-mainGreen text-white"
-          previousClassName="rounded-lg px-3 py-1 hover:bg-gray-300 cursor-pointer"
-          nextClassName="rounded-lg px-3 py-1 hover:bg-gray-300 cursor-pointer"
-        />
+        <div className="mt-[60px]">
+          <ReactPaginate
+            breakLabel="..."
+            nextLabel=">"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={3}
+            pageCount={pageCount}
+            previousLabel="<"
+            containerClassName="flex items-center justify-center mt-5 gap-x-2"
+            pageClassName="rounded-lg px-3 py-1 hover:bg-mainGreen hover:text-white cursor-pointer"
+            activeClassName="bg-mainGreen text-white"
+            previousClassName="rounded-lg px-3 py-1 hover:bg-gray-300 cursor-pointer"
+            nextClassName="rounded-lg px-3 py-1 hover:bg-gray-300 cursor-pointer"
+          />
+        </div>
       </div>
     </>
   );
