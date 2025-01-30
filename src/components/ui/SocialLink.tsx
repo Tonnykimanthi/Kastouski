@@ -18,7 +18,7 @@ const SocialLinks = ({ url, icon, styles }: SocialLinksProps) => {
           height={100}
           src={icon}
           alt="Social Link Icon"
-          className="h-full w-full border"
+          className="h-full w-full"
         />
       </button>
     </Link>
