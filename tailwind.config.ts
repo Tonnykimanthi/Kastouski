@@ -10,7 +10,6 @@ export default {
     extend: {
       colors: {
         mainYellow: "#FFE000",
-        // mainGreen: "#38A765",
         lightMainGreen: "#5DBB83",
         lightGreen: "#C0F3CB",
         mintWhite: "#F2F9F3",

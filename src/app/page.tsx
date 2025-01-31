@@ -22,7 +22,7 @@ export default function Home() {
         logo="logo-black.svg"
         googlePlayBtnStyles="border border-black"
         socialIconsStyles="hover:border-black hover:bg-transparent"
-        colsListStyles="text-black/50"
+        colsListStyles="text-black/50 hover:text-black"
       />
     </div>
   );

@@ -10,10 +10,10 @@ import Footer from "@/components/layout/Footer";
 const page = () => {
   return (
     <div>
-      <div className="px-16 py-5 max-lg:px-10 max-md:px-5">
+      <div className="mx-auto max-w-[150rem] px-16 py-5 max-lg:px-10 max-md:px-5">
         <Header logo="/logo-black.svg" />
       </div>
-      <div className="px-16 py-[50px] max-lg:px-10 max-md:px-5 max-w-[150rem] mx-auto">
+      <div className="mx-auto max-w-[150rem] p-16 max-lg:px-10 max-md:px-5">
         <SubTitle title="Новости" />
       </div>
       <div className="relative py-5">
@@ -26,13 +26,13 @@ const page = () => {
         />
         <Search
           placeholder="Поиск"
-          styles="max-w-lg w-10/12 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+          styles="max-w-64 sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
         />
       </div>
 
-      <main className="p-16 max-lg:px-10 max-md:px-5 2xl:py-[80px] max-w-[150rem] mx-auto">
+      <main className="mx-auto max-w-[150rem] p-16 max-lg:px-10 max-md:px-5 2xl:py-[80px]">
         <NewsBlock />
-        <hr className="border-t border-black mt-[60px]" />
+        <hr className="mt-[60px] border-t border-black" />
       </main>
       <div className="flex flex-col items-center px-16 pb-16 max-lg:px-10 max-md:px-5 2xl:mt-[100px]">
         <HelpBlock />
@@ -42,7 +42,7 @@ const page = () => {
         styles="bg-lightMainGreen text-white"
         logo="logo.svg"
         socialIconsStyles="text-black hover:bg-transparent hover:border-black"
-        colsListStyles="text-white/80"
+        colsListStyles="text-white/80 hover:text-mainYellow"
       />
     </div>
   );

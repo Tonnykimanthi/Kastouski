@@ -50,7 +50,7 @@ const Footer = ({
               {col.lists.map((item, i) => (
                 <Link key={i} href={item.path}>
                   <p
-                    className={`transition hover:text-black ${colsListStyles}`}
+                    className={`transition duration-300 ${colsListStyles}`}
                   >
                     {item.label}
                   </p>
