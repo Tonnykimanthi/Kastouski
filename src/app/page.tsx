@@ -10,7 +10,7 @@ import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden">
       <HeroSection />
       <FeaturesBlock />
       <NewsBlock />

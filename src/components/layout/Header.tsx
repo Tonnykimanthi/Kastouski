@@ -15,7 +15,7 @@ const Header = ({ logo }: HeaderProps) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between gap-x-12 max-w-[150rem] mx-auto">
+    <header className="mx-auto flex max-w-[150rem] items-center justify-between gap-x-12">
       <Link href={"/"}>
         <Image
           width={185}

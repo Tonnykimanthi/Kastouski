@@ -15,7 +15,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const FeedbackBlock = () => {
   return (
-    <section className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5">
+    <section className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5 overflow-y-hidden">
       <BgLines path="/lines4.svg" styles="!-top-2 !max-md:-top-10" />
       <div className="mx-auto flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[150rem]">
         <SubTitle title="Что говорят пользователи нашего приложения" />
