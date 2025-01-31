@@ -29,26 +29,3 @@ body {
   background-color: white;
   transform: scale(1.2);
 }
-
-/* .bgMain {
-  background: linear-gradient(
-    to right,
-    #41b36f,
-    #41b36f 99%,
-    #41b36f 96%,
-    #41b36f 92%,
-    #41b36f 85%,
-    #41b36f 77%,
-    #41b36f 67%,
-    #41b36f 56%,
-    #41b36f 44%,
-    #41b36f 33%,
-    #41b36f,
-    23%,
-    #41b36f 15%,
-    #41b36f 8%,
-    #41b36f 4%,
-    #41b36f 1%,
-    #41b36f 0%
-  );
-} */
