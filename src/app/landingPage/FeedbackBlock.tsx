@@ -15,9 +15,9 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const FeedbackBlock = () => {
   return (
-    <section className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5 overflow-y-hidden">
+    <section className="relative overflow-y-hidden bg-mainGreen p-16 max-lg:px-10 max-md:px-5">
       <BgLines path="/lines4.svg" styles="!-top-2 !max-md:-top-10" />
-      <div className="mx-auto flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[150rem]">
+      <div className="mx-auto flex items-center justify-between gap-5 text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[80vw]">
         <SubTitle title="Что говорят пользователи нашего приложения" />
         <button className="flex shrink-0 items-center gap-x-2 rounded-full border border-white px-3 py-1 uppercase transition duration-300 hover:bg-white/20 active:scale-95 max-sm:hidden 2xl:px-6 2xl:py-2 2xl:text-2xl">
           Оставить отзыв
@@ -31,7 +31,7 @@ const FeedbackBlock = () => {
         </button>
       </div>
 
-      <main className="relative mx-auto mt-10 w-full 2xl:max-w-[150rem]">
+      <main className="relative mx-auto mt-10 w-full 2xl:max-w-[80vw]">
         <Splide
           aria-label="News Slider"
           hasTrack={false}

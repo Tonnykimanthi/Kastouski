@@ -25,7 +25,7 @@ const Footer = ({
 }: FooterProps) => {
   return (
     <footer className={`p-16 ${styles}`}>
-      <div className="mx-auto flex max-w-[150rem] items-center justify-between gap-5 max-sm:flex-col max-sm:text-center">
+      <div className="mx-auto flex items-center justify-between gap-5 max-sm:flex-col max-sm:text-center 2xl:max-w-[80vw]">
         <SubTitle
           title="Управляйте финансами с лёгкостью"
           styles="!font-normal"
@@ -33,7 +33,7 @@ const Footer = ({
         <GooglePlayBtn styles={googlePlayBtnStyles} />
       </div>
 
-      <main className="mx-auto mt-10 flex max-w-[150rem] gap-24 max-md:flex-col-reverse max-md:items-center xl:gap-x-72">
+      <main className="mx-auto mt-10 flex gap-24 max-md:flex-col-reverse max-md:items-center xl:gap-x-72 2xl:max-w-[80vw]">
         <Link href={"#"}>
           <Image
             width={185}
@@ -49,9 +49,7 @@ const Footer = ({
               <h5 className="mb-[20px]">{col.heading}</h5>
               {col.lists.map((item, i) => (
                 <Link key={i} href={item.path}>
-                  <p
-                    className={`transition duration-300 ${colsListStyles}`}
-                  >
+                  <p className={`transition duration-300 ${colsListStyles}`}>
                     {item.label}
                   </p>
                 </Link>
@@ -61,7 +59,7 @@ const Footer = ({
         </div>
       </main>
 
-      <div className="mx-auto mt-5 flex max-w-[150rem] items-center justify-between gap-5 max-sm:flex-col">
+      <div className="mx-auto mt-5 flex items-center justify-between gap-5 max-sm:flex-col 2xl:max-w-[80vw]">
         <p className={`${colsListStyles}`}>2024 © Все права защищены</p>
         <div className="flex gap-5">
           {socialLinksList.map((item, index) => (

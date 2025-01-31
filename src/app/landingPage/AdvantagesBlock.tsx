@@ -5,13 +5,13 @@ import Image from "next/image";
 const AdvantagesBlock = () => {
   return (
     <section id="advantages" className="p-16 max-lg:px-10 max-md:px-5">
-      <div className="text-center">
+      <div className="mx-auto text-center 2xl:max-w-[80vw]">
         <SubTitle
           title="Получите наилучшие впечатления"
           paragraph="Совершите плавный переход к финансовому мастерству с помощью интуитивно понятных инструментов, персонализированной информации и безопасных транзакций."
         />
       </div>
-      <main className="mt-10 grid grid-cols-2 gap-5 max-sm:grid-cols-1">
+      <main className="mx-auto mt-10 grid grid-cols-2 gap-5 max-sm:grid-cols-1 2xl:max-w-[80vw]">
         <Image
           width={500}
           height={500}

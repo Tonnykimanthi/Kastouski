@@ -10,10 +10,10 @@ import Footer from "@/components/layout/Footer";
 const page = () => {
   return (
     <div>
-      <div className="mx-auto max-w-[150rem] px-16 py-5 max-lg:px-10 max-md:px-5">
+      <div className="mx-auto px-16 py-5 max-lg:px-10 max-md:px-5 2xl:max-w-[80vw]">
         <Header logo="/logo-black.svg" />
       </div>
-      <div className="mx-auto max-w-[150rem] p-16 max-lg:px-10 max-md:px-5">
+      <div className="mx-auto p-16 max-lg:px-10 max-md:px-5 2xl:max-w-[80vw]">
         <SubTitle title="Новости" />
       </div>
       <div className="relative py-5">
@@ -30,7 +30,7 @@ const page = () => {
         />
       </div>
 
-      <main className="mx-auto max-w-[150rem] p-16 max-lg:px-10 max-md:px-5 2xl:py-[80px]">
+      <main className="mx-auto p-16 max-lg:px-10 max-md:px-5 2xl:max-w-[80vw] 2xl:py-[80px]">
         <NewsBlock />
         <hr className="mt-[60px] border-t border-black" />
       </main>

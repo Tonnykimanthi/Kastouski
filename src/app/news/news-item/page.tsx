@@ -9,15 +9,15 @@ import Article from "./Article";
 const page = () => {
   return (
     <div>
-      <div className="px-16 py-5 max-lg:px-10 max-md:px-5">
+      <div className="mx-auto px-16 py-5 max-lg:px-10 max-md:px-5 2xl:max-w-[80vw]">
         <Header logo="/logo-black.svg" />
       </div>
-      <main className="mx-auto max-w-[150rem] px-16 py-10 max-lg:px-10 max-md:px-5">
+      <main className="mx-auto px-16 py-10 max-lg:px-10 max-md:px-5 2xl:max-w-[80vw]">
         <div className="flex items-center justify-between gap-5 max-md:flex-col">
           <Breadcrumbs />
           <Search placeholder="Поиск" styles="relative" />
         </div>
-        <div className="mt-[50px] flex gap-x-10 gap-y-5 max-md:flex-col-reverse max-md:items-center 2xl:gap-x-[150px]">
+        <div className="mt-[50px] flex gap-x-10 gap-y-5 max-lg:flex-col-reverse max-md:items-center 2xl:gap-x-[150px]">
           <OtherNews />
           <Article />
         </div>

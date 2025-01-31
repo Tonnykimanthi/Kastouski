@@ -9,11 +9,12 @@ const HeroSection = () => {
   return (
     <section className="relative bg-mainGreen px-16 py-5 text-white max-lg:px-10 max-md:px-5">
       <BgLines path="/lines.svg" />
-      <Header logo="/logo-test.svg"/>
+
+      <Header logo="/logo-test.svg" />
 
       <Title />
 
-      <div className="relative mx-auto -mt-32 flex max-w-[150rem] flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10">
+      <div className="relative mx-auto -mt-32 flex flex-col items-center gap-y-2 max-md:-mt-20 max-sm:-mt-10 2xl:max-w-[80vw]">
         <Image width={2000} height={2000} src={"phones.svg"} alt="Phones" />
         <div className="bottom-14 left-0 w-auto max-lg:bottom-10 max-md:bottom-10 md:absolute">
           <GooglePlayBtn />

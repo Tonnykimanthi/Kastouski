@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Title = () => {
   return (
-    <div className="mx-auto mt-10 w-fit max-w-[150rem] max-2xl:mt-20 2xl:mt-32">
+    <div className="mx-auto mt-10 w-fit 2xl:max-w-[80vw] max-2xl:mt-20 2xl:mt-32">
       <div className="flex items-center gap-x-[60px] max-md:hidden">
         <h2 className="whitespace-nowrap text-3xl font-medium uppercase md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl min-[2160px]:text-8xl">
           Лучший способ управлять

@@ -8,13 +8,13 @@ const DownloadCardBlock = () => {
   return (
     <section className="relative bg-mainGreen p-16 text-white max-lg:px-10 max-md:px-5">
       <BgLines path="/lines3.svg" styles="!top-56 !max-md:top-56" />
-      <div className="mx-auto max-w-[150rem] text-center">
+      <div className="mx-auto text-center 2xl:max-w-[80vw]">
         <SubTitle
           title="Скачайте мобильное приложение FinFlow"
           paragraph="Скачайте FinFlow прямо сейчас и с лёгкостью управляйте своими финансами. Получите доступ к персонализированной аналитической информации, управляйте бюджетами, и многое другое - все это в одном надежном месте."
         />
       </div>
-      <div className="relative mx-auto mt-10 flex h-80 max-w-[150rem] flex-col items-center overflow-hidden rounded-xl bg-white pt-5 md:h-[30rem] lg:h-[40rem] lg:px-10 lg:pt-7 xl:h-[45rem] 2xl:h-[60rem] 2xl:px-32 2xl:pt-[50px]">
+      <div className="relative mx-auto mt-10 flex h-80 flex-col items-center overflow-hidden rounded-xl bg-white pt-5 md:h-[30rem] lg:h-[40rem] lg:px-10 lg:pt-7 xl:h-[45rem] 2xl:h-[60rem] 2xl:max-w-[80vw] 2xl:px-32 2xl:pt-[50px]">
         <GooglePlayBtn styles="border border-black md:self-start ml-5" />
         <div className="z-20 mt-auto w-full">
           <Image
