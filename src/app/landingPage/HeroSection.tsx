@@ -7,7 +7,7 @@ import GooglePlayBtn from "@/components/ui/GooglePlayBtn";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-mainGreen px-16 py-5 text-white max-lg:px-10 max-md:px-5">
+    <section className="relative overflow-y-hidden bg-mainGreen px-16 py-5 text-white max-lg:px-10 max-md:px-5">
       <BgLines path="/lines.svg" />
 
       <Header logo="/logo-test.svg" />

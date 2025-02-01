@@ -17,7 +17,7 @@ const NewsBlock = () => {
   return (
     <section
       id="news"
-      className="relative bg-mainGreen p-16 max-lg:px-10 max-md:px-5"
+      className="relative overflow-y-hidden bg-mainGreen p-16 max-lg:px-10 max-md:px-5"
     >
       <BgLines path="/lines2.svg" styles="!-top-36 !max-md:-top-16" />
       <div className="z-[2] mx-auto flex items-center justify-between text-white max-sm:justify-center max-sm:text-center 2xl:max-w-[80vw]">

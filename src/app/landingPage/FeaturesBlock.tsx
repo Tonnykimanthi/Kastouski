@@ -6,7 +6,10 @@ import SubTitle from "@/components/ui/SubTitle";
 
 const FeaturesBlock = () => {
   return (
-    <section id="possibilities" className="p-16 max-lg:px-10 max-md:px-5">
+    <section
+      id="possibilities"
+      className="overflow-y-hidden p-16 max-lg:px-10 max-md:px-5"
+    >
       <div className="text-center">
         <SubTitle
           title="Возможности"

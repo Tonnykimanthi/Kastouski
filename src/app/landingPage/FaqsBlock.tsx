@@ -5,7 +5,10 @@ import { questionsList } from "@/constants/questionsList";
 
 const FaqsBlock = () => {
   return (
-    <section id="faqs" className="p-16 max-lg:px-10 max-md:px-5">
+    <section
+      id="faqs"
+      className="overflow-y-hidden p-16 max-lg:px-10 max-md:px-5"
+    >
       <div className="mx-auto 2xl:max-w-[80vw]">
         <SubTitle title="Часто задаваемые вопросы" />
       </div>

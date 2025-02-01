@@ -24,7 +24,7 @@ const Footer = ({
   colsListStyles,
 }: FooterProps) => {
   return (
-    <footer className={`p-16 ${styles}`}>
+    <footer className={`overflow-y-hidden p-16 ${styles}`}>
       <div className="mx-auto flex items-center justify-between gap-5 max-sm:flex-col max-sm:text-center 2xl:max-w-[80vw]">
         <SubTitle
           title="Управляйте финансами с лёгкостью"

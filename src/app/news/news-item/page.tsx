@@ -26,6 +26,7 @@ const page = () => {
         styles="bg-lightMainGreen text-white"
         logo="/logo.svg"
         socialIconsStyles="text-black hover:bg-transparent hover:border-black"
+        colsListStyles="text-white/80 hover:text-mainYellow"
       />
     </div>
   );

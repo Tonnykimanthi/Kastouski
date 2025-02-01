@@ -78,10 +78,10 @@ const Article = () => {
       <div className="mt-5 flex flex-col items-center gap-2 text-center">
         <p>Было ли обновление полезным?</p>
         <div className="space-x-4">
-          <button className="w-20 rounded-full border border-mainGreen py-1 transition hover:bg-mainGreen hover:text-white">
+          <button className="w-20 rounded-full border border-[#007B14] bg-[#F5F5F5] py-1 transition hover:bg-[#007B14] hover:text-white">
             Да
           </button>
-          <button className="w-20 rounded-full border border-red-500 py-1 transition hover:text-red-500">
+          <button className="w-20 rounded-full border border-[#007B14] bg-[#F5F5F5] py-1 transition hover:border-red-500 hover:text-red-500">
             Нет
           </button>
         </div>

@@ -4,7 +4,10 @@ import Image from "next/image";
 
 const AdvantagesBlock = () => {
   return (
-    <section id="advantages" className="p-16 max-lg:px-10 max-md:px-5">
+    <section
+      id="advantages"
+      className="overflow-y-hidden p-16 max-lg:px-10 max-md:px-5"
+    >
       <div className="mx-auto text-center 2xl:max-w-[80vw]">
         <SubTitle
           title="Получите наилучшие впечатления"
